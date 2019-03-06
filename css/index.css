@@ -7,54 +7,17 @@
 body {
     font-size: 100%;
     background-color: whitesmoke;
-    font-family: DejaVu Sans Condensed, 'Lucida Sans Unicode', 'Lucida Grande';
+    font-family: "URW Gothic L", "Century Gothic";
+    margin: 0; /*Sin márgenes*/
 }
 
-/*Navegación*/
-nav > ul {
-    list-style-type: none; /*Elimina la numeración*/
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #313131;
-}
-
-nav > ul > li {
-    float: left;
-}
-
-nav > ul > li > a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; 
-}
-
-nav a:hover {
-    background-color: #111;   
-}
-
-button {
-    background-color: white;
-    border: none;
-    color: black;
-    border: 2px solid #f44336;
-    padding: 15px 32px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-button:hover {
-    background-color: #f44336;
-    color: white;
-    transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s; 
+header {
+    border: 1px solid black;
 }
 
 header > div {
     text-align: center;
+    padding: 20px;
 }
 
 h1 {
@@ -99,11 +62,10 @@ figure > img {
 }
 
 /*Seccion servicios*/
-#servicios > div {
-    background-color: #313131;
-    color: white;
+#servicios div {
     padding-bottom: 25px;
     padding-top: 25px;
+    border: 1px solid black;
 }
 
 #servicios p {
@@ -114,6 +76,7 @@ figure > img {
 #portafolio div {
     padding-top: 25px;
     padding-bottom: 25px;
+    border: 1px solid black;
 }
 
 #portafolio article {
@@ -121,18 +84,81 @@ figure > img {
     margin-right: 25px;
 }
 
-#habilidades {
-    background-color: #313131;
-    color: white;
+#habilidades div {
     padding-bottom: 25px;
     padding-top: 25px;
+    border: 1px solid black;
+}
+
+#habilidades article {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #acerca div {
     padding-bottom: 10px;
     padding-top: 10px; 
+    border: 1px solid black;
 }
 
 #acerca p {
     margin-top: 50px;
 }
+
+#contacto > div {
+    border: 1px solid black;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    border: 2px solid #f44336;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #f44336;
+    color: white;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; 
+}
+
+footer {
+    border: 1px solid black;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*Media queries > 900px*/
+@media screen and (min-width: 900px) {
+    section div {
+        margin-left: 25%;
+    }
+
+    section article p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header {
+        margin-left: 25%;
+    }
+
+    footer {
+        margin-left: 25%; 
+        
+    }
+}
+
+/*Media queries 600 a 899px*/
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    
+}
+
+

@@ -7,15 +7,17 @@
     <title>Gabriel Martínez - gabmart1995</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/navbar.css" type="text/css">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav>
+     <!-- Navegación -->
+     <nav>
         <ul>
+            <li><a href="#">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
             <li><a href="#acerca">Acerca de mí</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li class="right"><a href="#contacto" class="active">Contacto</a></li>
         </ul>
     </nav>
     <!-- Cabecera -->
@@ -25,7 +27,7 @@
             <h1>Gabriel Martínez</h1>
         </hgroup>
         <div>
-            <button>Acerca de mi</button>
+          <button>Acerca de mi</button>
         </div>  
     </header>
     <!-- Servicios -->
@@ -204,8 +206,8 @@
     </section>
     <!-- Contactame -->
     <section id="contacto">
-        <article>
-            <div>
+        <div id="container">
+            <article>
                 <hgroup>
                     <h2>Contáctame</h2>  
                     <h3>Redes Sociales</h3>                        
@@ -217,15 +219,15 @@
                 <a href="">Facebook</a>
                 <a href="">Perfil de Github</a>
                 <a href="">Likedln</a>
-            </div>
-            <div>
+            </article>
+            <article>
                 <h3>Correo Electrónico</h3>
                 <p>
                     Si estas interesado en contactarme de forma personal, puedes escribir 
                     al siguiente correo: gabrielmartinez@gmail.com
                 </p>
-            </div>
-        </article>
+            </article>
+        </div>
     </section>
     <!-- Footer de la página -->
     <footer>

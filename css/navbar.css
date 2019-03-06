@@ -1,0 +1,106 @@
+/* Barra de Navegación*/
+/*Media queries > 900px*/
+@media screen and (min-width: 900px) {
+    nav > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #212121;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+    }
+
+    nav a {
+        display: block;
+        color: whitesmoke;
+        padding: 16px 18px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .active {
+        background-color: #f44336;
+    }
+
+    nav a:hover:not(.active) {
+        background-color: black;
+        color: white;
+    } 
+}
+
+/*Media queries 600px a 899px*/
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #212121;
+         
+        /*Fixed top*/
+         position: fixed;
+         top: 0;
+         width: 100%;
+    }
+    
+    nav li {
+        float: left;
+    }
+    
+    nav li a  {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 22px;
+        text-decoration: none;
+    }
+    
+    nav li a:hover:not(.active) {
+        background-color: #111;
+    }
+    
+    .active {
+        background-color: #f44336;
+    }
+
+    nav li:last-child {
+        float: right;
+    }
+}
+
+/*Media queries < 600px*/
+@media screen and (max-width: 599px) {
+    nav > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #212121;
+    }
+
+    nav > ul > li {
+        float: left;
+    }
+
+    nav > ul > li > a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 22px;
+        text-decoration: none;
+    }
+
+    nav > ul > li > a:hover:not(.active) {
+        background-color: black;
+        color: white;
+    }
+
+    .active {
+        background-color: #f44336;
+        color: white;
+    }
+}/*Fin Navbar*/

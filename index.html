@@ -8,8 +8,25 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="stylesheet" href="./css/navbar.css" type="text/css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="./css/fontawesome.min.css" type="text/css">
 </head>
 <body>
+    <!-- Cabecera -->
+    <header>
+        <div id="title">
+            <hgroup>
+                <h2>Bienvenido a mi sitio personal soy:</h2>
+                <h1>Gabriel Martínez</h1>
+            </hgroup>
+        </div>
+        <div id="botones">
+            <button>
+                <i class="fas fa-plus"></i>
+                Acerca de mi
+            </button>
+        </div>  
+    </header>
      <!-- Navegación -->
      <nav>
         <ul>
@@ -20,16 +37,6 @@
             <li class="right"><a href="#contacto" class="active">Contacto</a></li>
         </ul>
     </nav>
-    <!-- Cabecera -->
-    <header>
-        <hgroup>
-            <h2>Bienvenido a mi sitio personal soy:</h2>
-            <h1>Gabriel Martínez</h1>
-        </hgroup>
-        <div>
-          <button>Acerca de mi</button>
-        </div>  
-    </header>
     <!-- Servicios -->
     <section id="servicios">
         <div>
@@ -38,6 +45,9 @@
                     <h3>Mis servicios a clientes</h3>
             </hgroup>                    
             <article>
+                <figure>
+                    <i class="fas fa-diagnoses"></i>
+                </figure>
                 <h3>Análista de Sistemas de Información:</h3>
                 <p>
                     Soy un profesional que busca estudiar, diseñar, adaptar y mejorar  sistemas
@@ -46,6 +56,9 @@
                 </p>
             </article>
             <article>
+                <figure>
+                    <i class="fas fa-code"></i>
+                </figure>
                 <h3>Desarrollo Web:</h3>
                 <p>
                     Me especializo en la programación full-stack para el desarrollo de 
@@ -55,6 +68,9 @@
                 </p>
             </article>
             <article>
+                <figure>
+                    <i class="fas fa-laptop-code"></i>
+                </figure>
                 <h3>Desarrollo de Aplicaciones:</h3>
                 <p>
                     ¿Necesitas una aplicación para tu equipo pero no tienes servidor web? Tranquilo, 
@@ -125,18 +141,24 @@
                     En la parte de la programación web me centro en el desarrollo de 
                     los principales en lenguajes de programación que solicitan en el mercado.
                 </p>
-                <meter value="75" max="100">Tu navegador no soporta HTML5</meter> HTML5
-                <meter value="70" max="100">Tu navegador no soporta HTML5</meter> PHP
-                <meter value="50" max="100">Tu navegador no soporta HTML5</meter> CSS3
-                <meter value="45" max="100">Tu navegador no soporta HTML5</meter> JavaScript
-                <meter value="55" max="100">Tu navegador no soporta HTML5</meter>SQL
+                <meter value="75" max="100">Tu navegador no soporta HTML5</meter> 
+                <i class="fab fa-html5"></i> HTML5
+                <meter value="70" max="100">Tu navegador no soporta HTML5</meter> 
+                <i class="fab fa-php"></i> PHP
+                <meter value="50" max="100">Tu navegador no soporta HTML5</meter> 
+                <i class="fab fa-css3"></i>CSS3
+                <meter value="45" max="100">Tu navegador no soporta HTML5</meter> 
+                <i class="fab fa-js"></i>JavaScript
+                <meter value="55" max="100">Tu navegador no soporta HTML5</meter>
+                <i class="fas fa-server"></i>SQL
                 <p>
                     En el desarrollo de aplicaciones me concentro en las tecnologías de 
                     desarrollo móvil y de escritorio.
                 </p>
-                <meter value="60" max="100">Tu navegador no soporta HTML5</meter> Java
-                <meter value="70" max="100">Tu navegador no soporta HTML5</meter> C++ 
-                <meter value="55" max="100"></meter> Bash Linux  
+                <meter value="60" max="100">Tu navegador no soporta HTML5</meter> 
+                <i class="fab fa-java"></i>Java
+                <meter value="55" max="100"></meter> 
+                <i class="fas fa-terminal"></i>Bash Linux  
             </article>
             <article>
                 <h3>Frameworks y librerías de Desarrollo</h3>
@@ -146,8 +168,10 @@
                     proceso de diseño y desarrollo, como profesional de la informática
                     me mantengo actualizado sobre estas herramientas.
                 </p>
-                <meter value="30" max="100">Tu navegador no soporta HTML5</meter> Framework Laravel
-                <meter value="50" max="100">Tu navegador no soporta HTML5</meter> CSS Boostrap y MaterializeCSS
+                <meter value="30" max="100">Tu navegador no soporta HTML5</meter> 
+                <i class="fab fa-laravel"></i> Laravel
+                <meter value="50" max="100">Tu navegador no soporta HTML5</meter>
+                <i class="fab fa-css3-alt"></i> CSS Boostrap y MaterializeCSS
             </article>
             <article>
                 <h2>Competencias</h2>
@@ -216,9 +240,15 @@
                     Puedes ubicarme a traves de las redes sociales:                       
                 </p>
                 <!-- Redes sociales -->
-                <a href="">Facebook</a>
-                <a href="">Perfil de Github</a>
-                <a href="">Likedln</a>
+                <a href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </article>
             <article>
                 <h3>Correo Electrónico</h3>

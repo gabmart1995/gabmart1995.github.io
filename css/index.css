@@ -1,0 +1,138 @@
+/*
+    Version 1.0
+    Estilos CSS
+    Autor: Gabriel Martínez
+*/
+
+body {
+    font-size: 100%;
+    background-color: whitesmoke;
+    font-family: DejaVu Sans Condensed, 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+/*Navegación*/
+nav > ul {
+    list-style-type: none; /*Elimina la numeración*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #313131;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+nav a:hover {
+    background-color: #111;   
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    border: 2px solid #f44336;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #f44336;
+    color: white;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; 
+}
+
+header > div {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;  
+}
+
+h2 {
+    font-size: 1.875em;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+ul > li {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+figure {
+    text-align: center;
+}
+
+figure > figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+figure > img {
+    border-radius: 160px;
+    height: 200px;
+    width: 200px;
+}
+
+/*Seccion servicios*/
+#servicios > div {
+    background-color: #313131;
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#servicios p {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#portafolio div {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#portafolio article {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#habilidades {
+    background-color: #313131;
+    color: white;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+#acerca div {
+    padding-bottom: 10px;
+    padding-top: 10px; 
+}
+
+#acerca p {
+    margin-top: 50px;
+}

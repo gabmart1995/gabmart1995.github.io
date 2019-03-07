@@ -25,7 +25,7 @@ header {
     position: relative;
 }
 
-header #title {
+header #titulo {
      color: white;
      margin-top: 100px;
      font-weight: normal;
@@ -34,6 +34,28 @@ header #title {
 header #botones {
     text-align: center;
     padding: 20px;
+}
+
+/*botones*/
+button {
+    background-color: #313131;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #f44336;
+    color: white;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; 
 }
 
 h1 {
@@ -86,11 +108,6 @@ figure > img {
 #servicios div {
     padding-bottom: 25px;
     padding-top: 25px;
-    border: 1px solid black;
-}
-
-#servicios .icono {
-    text-align: center;
 }
 
 #servicios p {
@@ -98,67 +115,90 @@ figure > img {
     margin-right: 25px;
 }
 
-#portafolio div {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border: 1px solid black;
+.icono {
+    margin-left: 0%;
 }
 
-#portafolio article {
-    margin-left: 25px;
-    margin-right: 25px;
+.icono i{
+    color: white;
+    font-size: 3em;
+    padding: 22px 20px;  /* Anchura y altura*/
+    border-radius: 20px;
+    background-color: #313131;
 }
 
-#habilidades div {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    border: 1px solid black;
-}
-
-#habilidades article {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-#acerca div {
-    padding-bottom: 10px;
-    padding-top: 10px; 
-    border: 1px solid black;
-}
-
-#acerca p {
-    margin-top: 50px;
-}
-
-#contacto > div {
-    border: 1px solid black;
-}
-
-/*enlace*/
-button {
-    background-color: white;
-    border: none;
-    color: black;
-    border: 2px solid #f44336;
-    padding: 15px 32px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-button i {
-    margin-right: 10px;
-}
-
-button:hover {
+/*Icono*/
+.icono i:hover {
     background-color: #f44336;
     color: white;
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s; 
 }
 
-footer {
+/*Seccion protafolio*/
+#portafolio div {
+    padding-top: 25px;
+    padding-bottom: 25px;
     border: 1px solid black;
+    background-color: #313131;
+    color: white;
+}
+
+/*Sección habilidades*/
+#habilidades div {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border: 1px solid black;
+}
+
+/*Sección acerca*/
+#acerca div {
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    background-color: #313131;
+    color: white;
+}
+
+#acerca p {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+/*Sección contacto*/
+#contacto > div {
+    border: 1px solid black;
+}
+
+#contacto p {
+    margin-bottom: 25px;
+}
+
+#contacto .contenedor {
+    margin-left: 0%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contenedor i {
+    font-size: 3em;
+}
+
+.contenedor a {
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+
+.contenedor a:hover {
+    color: #f44336;
+}
+
+/*footer*/
+footer {
+    border: 1px solid #313131;
+    background-color: #313131;
+    color: white;
 }
 
 footer p {

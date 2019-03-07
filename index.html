@@ -14,7 +14,7 @@
 <body>
     <!-- Cabecera -->
     <header>
-        <div id="title">
+        <div id="titulo">
             <hgroup>
                 <h2>Bienvenido a mi sitio personal soy:</h2>
                 <h1>Gabriel Martínez</h1>
@@ -46,7 +46,9 @@
             </hgroup>                    
             <article>
                 <figure>
-                    <i class="fas fa-diagnoses"></i>
+                    <div class="icono">
+                        <i class="fas fa-diagnoses"></i>
+                    </div>
                 </figure>
                 <h3>Análista de Sistemas de Información:</h3>
                 <p>
@@ -57,7 +59,9 @@
             </article>
             <article>
                 <figure>
-                    <i class="fas fa-code"></i>
+                    <div class="icono">
+                        <i class="fas fa-code"></i>
+                    </div>
                 </figure>
                 <h3>Desarrollo Web:</h3>
                 <p>
@@ -69,7 +73,9 @@
             </article>
             <article>
                 <figure>
-                    <i class="fas fa-laptop-code"></i>
+                    <div class="icono">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
                 </figure>
                 <h3>Desarrollo de Aplicaciones:</h3>
                 <p>
@@ -230,40 +236,35 @@
     </section>
     <!-- Contactame -->
     <section id="contacto">
-        <div id="container">
+        <div>
             <article>
                 <hgroup>
                     <h2>Contáctame</h2>  
                     <h3>Redes Sociales</h3>                        
                 </hgroup> 
-                <p>
-                    Puedes ubicarme a traves de las redes sociales:                       
-                </p>
                 <!-- Redes sociales -->
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </article>
-            <article>
-                <h3>Correo Electrónico</h3>
+                <div class="contenedor">
+                   <a href="https://github.com/gabmart1995">
+                       <i class="fab fa-github"></i>
+                   </a>
+                   <a href="#">
+                       <i class="fab fa-linkedin"></i>
+                   </a>
+                   <a href="#">
+                       <i class="fas fa-envelope"></i>
+                   </a>
+                </div>
                 <p>
-                    Si estas interesado en contactarme de forma personal, puedes escribir 
-                    al siguiente correo: gabrielmartinez@gmail.com
+                    Puedes consultar las redes sociales para conocer acerca 
+                    más de mí y mis proyectos personales. O si lo 
+                    prefieres puedes contactarme por correo electronico.
                 </p>
             </article>
         </div>
     </section>
     <!-- Footer de la página -->
     <footer>
-        <div>
-            <p>Gabriel Martínez &copy; 2019</p>
-        </div>
+        <p>Gabriel Martínez &copy; 2019</p>
     </footer>
 </body>
 </html>

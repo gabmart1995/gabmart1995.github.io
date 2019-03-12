@@ -168,23 +168,46 @@ figure > figcaption {
 #habilidades div {
     padding-bottom: 25px;
     padding-top: 25px;
-    border: 1px solid black;
 }
 
 #habilidades i {
     margin-left: 25px;
     margin-right: 25px;
     font-size: 1.3em;
-    color: white;
 }
 
-.medicion a {
+.medicion {
+    text-align: center;
+    background-color: #313131;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.medicion span {
     text-decoration: none;
     color: white;
 }
 
-.medicion {
-    background-color: #313131;
+/*Barra de progreso*/
+#habilidades progress[value] {
+    border: none;
+    width: 250px;
+    height: 20px;  
+    color: #f44336;
+    border-radius: 10px; 
+}
+
+progress::-moz-progress-bar { 
+    background: #f44336; 
+    border-radius: 10px;
+}
+progress::-webkit-progress-value { 
+    background: #f44336; 
+    border-radius: 10px;
+}
+
+#habilidades ul li {
+    margin-bottom: 20px;
 }
 
 /*Sección acerca*/
@@ -266,13 +289,6 @@ footer p {
 
     #habilidades .medicion {
         margin: 0;
-        border: none;
-    }
-
-    #habilidades meter {
-        width: 500px;
-        height: 20px;
-        margin-left: 25px;
     }
 
     footer {

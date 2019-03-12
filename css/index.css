@@ -171,6 +171,22 @@ figure > figcaption {
     border: 1px solid black;
 }
 
+#habilidades i {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 1.3em;
+    color: white;
+}
+
+.medicion a {
+    text-decoration: none;
+    color: white;
+}
+
+.medicion {
+    background-color: #313131;
+}
+
 /*Sección acerca*/
 #acerca div {
     padding-bottom: 10px;
@@ -246,6 +262,17 @@ footer p {
 
     header {
         margin-left: 25%;
+    }
+
+    #habilidades .medicion {
+        margin: 0;
+        border: none;
+    }
+
+    #habilidades meter {
+        width: 500px;
+        height: 20px;
+        margin-left: 25px;
     }
 
     footer {

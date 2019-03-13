@@ -94,6 +94,34 @@ figure > figcaption {
     margin-bottom: 10px;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    margin: 0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
 /*Seccion servicios*/
 #servicios div {
     padding-bottom: 25px;
@@ -298,8 +326,13 @@ footer p {
 }
 
 /*Media queries 600 a 899px*/
-@media screen and (min-width: 600px) and (max-width: 899px) {
-    /*CSS*/    
+@media screen and (min-width: 320px) and (max-width: 430px) {
+    #habilidades progress[value] {
+        width: 100px;
+        height: 20px;  
+        color: #f44336;
+        border-radius: 10px; 
+    }
 }
 
 

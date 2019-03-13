@@ -15,7 +15,7 @@ window.onload = function()
     {
         html.value += 5;
 
-        if(html.value == 90) 
+        if (html.value == 90) 
         {   
             clearInterval(idInterval);
         }
@@ -27,7 +27,7 @@ window.onload = function()
     {
         php.value += 5;
 
-        if(php.value == 70) 
+        if (php.value == 70) 
         {
             clearInterval(idInterval2);
         }
@@ -39,7 +39,7 @@ window.onload = function()
     {
         css.value += 5;
 
-        if(css.value == 50) 
+        if (css.value == 50) 
         {
             clearInterval(idInterval3);
         }
@@ -51,7 +51,7 @@ window.onload = function()
     {
         js.value += 5;
 
-        if(js.value == 45) 
+        if (js.value == 45) 
         {
             clearInterval(idInterval4);
         }
@@ -63,7 +63,7 @@ window.onload = function()
     {
         sql.value += 5;
 
-        if(sql.value == 55) 
+        if (sql.value == 55) 
         {
             clearInterval(idInterval5);
         }
@@ -75,7 +75,7 @@ window.onload = function()
     {
         java.value += 5;
 
-        if(java.value == 60) 
+        if (java.value == 60) 
         {
             clearInterval(idInterval6);
         }
@@ -87,7 +87,7 @@ window.onload = function()
     {
         bash.value += 5;
 
-        if(bash.value == 55) 
+        if (bash.value == 55) 
         {
             clearInterval(idInterval7);
         }
@@ -99,7 +99,7 @@ window.onload = function()
     {
         laravel.value += 5;
 
-        if(laravel.value == 50) 
+        if (laravel.value == 50) 
         {
             clearInterval(idInterval8);
         }

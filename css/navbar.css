@@ -41,10 +41,10 @@
         overflow: hidden;
         background-color: #212121;
          
-        /*Fixed top*/
-         position: fixed;
-         top: 0;
-         width: 100%;
+        /*Fixed sticky*/
+       position: fixed;
+       top: 0;
+       width: 100%;
     }
     
     nav li {

@@ -1,0 +1,33 @@
+/*Estilos de galería slider*/
+.w3-content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.w3-section {
+    margin: 0;
+}
+
+.w3-content .w3-display-container {
+    max-width: 800px;
+}
+
+.w3-badge .w3-right .w3-left {
+    cursor: pointer;
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
+
+.slide1 {
+    display: none;
+    width: 100%;
+}
+
+.slide2 {
+    display: none;
+    width: 100%;
+}

@@ -13,7 +13,7 @@ body {
 
 header {
     border: 1px solid black;
-    background-image: url(./../img/computer-1245714_1920.jpg);
+    background-image: url(./../img/dark-computer.jpg);
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -157,7 +157,6 @@ figure > figcaption {
 #portafolio div {
     padding-top: 25px;
     padding-bottom: 25px;
-    border: 1px solid black;
     background-color: #313131;
     color: white;
 }
@@ -258,10 +257,6 @@ progress::-webkit-progress-value {
 }
 
 /*Sección contacto*/
-#contacto > div {
-    border: 1px solid black;
-}
-
 #contacto p {
     margin-bottom: 25px;
 }

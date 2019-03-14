@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<!-- Pagina Web Gabriel Martínez V1.0 14-03-18-->
 <html lang="es-VE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gabriel Martínez - gabmart1995</title>
-    <link rel="icon" href="./img/imagen.png" type="image/png">
+    <title>Gabriel Martínez</title>
+    <link rel="icon" href="./img/firma.png" type="image/png">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/vendor/w3.css" type="text/css">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
@@ -31,7 +32,7 @@
         </div>  
     </header>
      <!-- Navegación -->
-     <nav id="navbar">
+     <nav>
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
@@ -50,7 +51,7 @@
             <article>
                 <figure>
                     <div class="icono">
-                        <i class="fas fa-diagnoses"></i>
+                        <i class="fas fa-project-diagram"></i>
                     </div>
                 </figure>
                 <h3>Análista de Sistemas de Información:</h3>
@@ -92,36 +93,69 @@
     <!-- Portafolio -->
     <section id="portafolio">
         <div>
-            <h2>Portafolio de Trabajo</h2>
-            <h2>Proyectos personales</h2>
+            <hgroup>
+                <h2>Portafolio de Trabajo</h2>
+                <h3>Proyectos personales</h3>
+            </hgroup>
             <article>
                 <hgroup>
-                    <h3>Estudios Audiophone S.A</h3>
                     <h4>Caracas - Venezuela</h4>
+                    <h5>Estudios Audiophone S.A</h5>
                 </hgroup>
                 <!-- Slider 1 -->
+                <div class="w3-content w3-display-container">
+                    <img src="./img/webaudiophone1.png" alt="webaudiophone1" class="slide1">
+                    <img src="./img/webaudiophone6.png" alt="webaudiophone6" class="slide1">
+                    <img src="./img/webaudiophone4.png" alt="webaudiophone4" class="slide1">
+                    <img src="./img/webaudiophone5.png" alt="webaudiophone5" class="slide1">
+                    <button class="w3-button w3-black w3-display-left"
+                    onclick="plusDivs(-1, 0);">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right"
+                    onclick="plusDivs(1, 0);">&#10095;</button>
+                </div>
+                <!-- / Slider 1-->
                 <p>
-                    Página web principal del Estudios Audiophone S.A.
+                    Página web principal del Estudio Audiophone S.A.
                 </p>
                 <details>
-                    <summary>Más detalles</summary> <!--Titulo detalles -->
+                    <summary>
+                        <i class="fas fa-info-circle"></i>
+                        Más detalles
+                    </summary> <!--Titulo detalles -->
                     <p>
                         Año de publicación: noviembre del 2017. <br>
                         Versión: 1.0 <br>
                         Desarrollador: Gabriel Martínez <br>
-                        Visita su pagina web en: <a href="http://eaudiophonesa.000webhostapp.com/">enlace</a>
+                        Visita su pagina web: 
+                        <a href="http://eaudiophonesa.000webhostapp.com/">
+                            Audiophone S.A
+                        </a>
                     </p>
                 </details>         
             </article>
             <article>
-                <h3>Audiophone-app</h3>
+                <h5>Audiophone-app</h5>
                 <!-- Slider 2-->
+                <div class="w3-content w3-display-container">
+                    <img src="./img/audiophoneapp.png" alt="audiophoneapp" class="slide2">
+                    <img src="./img/audiophoneapp1.png" alt="audiophoneapp1" class="slide2">
+                    <img src="./img/audiophoneapp2.png" alt="audiophoneapp2" class="slide2">
+                    <img src="./img/audiophoneapp3.png" alt="audiophoneapp3" class="slide2">
+                    <button class="w3-button w3-black w3-display-left"
+                    onclick="plusDivs(-1, 1);">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right"
+                    onclick="plusDivs(1, 1);">&#10095;</button>
+                </div>
+                <!-- / Slider 2 -->
                 <p>
                     Aplicación de negocios para solicitar citas dentro del estudio, 
-                    destinada al personal y clientes del estudio.     
+                    destinada al personal y clientes.     
                 </p> 
                 <details>
-                    <summary>Más detalles</summary>
+                    <summary>
+                        <i class="fas fa-info-circle"></i>
+                        Más detalles
+                    </summary>
                     <p>
                         En desarrollo. Versión 0.5 <br>
                         Nombres de los Desarrolladores: Gabriel Martínez & Alfonso Martínez <br>
@@ -131,18 +165,29 @@
                 </details>
             </article>
             <article>
-                <hgroup>
-                    <h3>PenielSoft S.A</h3>
+                    <h5>PenielSoft S.A</h5>
                     <!-- Slider 3 -->
+                    <div class="w3-content w3-display-container">
+                        <img src="./img/penielsoft01.png" alt="penielsoft01" class="slide3">
+                        <img src="./img/penielsoft02.png" alt="penielsoft02" class="slide3">
+                        <img src="./img/penielsoft03.png" alt="penielsoft03" class="slide3">
+                        <img src="./img/penielsoft04.png" alt="penielsoft04" class="slide3">
+                        <button class="w3-button w3-black w3-display-left"
+                        onclick="masDivs(-1);">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right"
+                        onclick="masDivs(1);">&#10095;</button>
+                    </div>
                 <p>
-                    Página web principal de la empresa desarrolladora de software PenielSoft S.A
+                    Página web principal de la desarrolladora de software PenielSoft S.A
                 </p>
                 <details>
-                    <summary>Más detalles</summary>
+                    <summary>
+                        <i class="fas fa-info-circle"></i>
+                        Más detalles
+                    </summary>
                     <p>
                         En desarrollo 0.7 <br>
-                        Visita el sitio web de PenielSoft  a través del siguiente: 
-                        <a href="https://www.penielsoft.com">enlace</a>
+                        Nombre de los desarrolladores: Gabriel Matínez & Jhonathan Tovar. <br>
                     </p>
                 </details>
             </article>
@@ -239,11 +284,11 @@
                         software y seguridad informática.
                     </li>
                     <li>
-                        Aplicar estandares de calidad, usabilidad y accesibilidad en el desarrollo de aplicaciones
+                        Aplicar estándares de calidad, usabilidad y accesibilidad en el desarrollo de aplicaciones
                         informáticas.
                     </li>
                     <li>
-                        Interpretar los modelos de datos con fines empresariales.
+                        Interpretar los modelos de datos con fines comunitarios y empresariales.
                     </li>
                     <li>
                         Elaborar la documentación técnica de una aplicación informática.
@@ -253,7 +298,7 @@
                     </li>
                     <li>
                         Participar activamente en el proceso de evaluación, selección, instalación y
-                        distribución del software.
+                        distribución de software.
                     </li>
                 </ul>
             </article>

@@ -1,3 +1,8 @@
+/*
+    JavaScript version 1.0
+    Autor Gabriel Martínez
+*/ 
+
 //carga la funcion cuando carga la pagina (Barra de progreso)
 window.onload = function() 
 {
@@ -106,3 +111,69 @@ window.onload = function()
 
     }, 30);
 }
+
+//Sliders
+var slideIndex = [1, 1];
+var slideId = ["slide1", "slide2"];
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n1, n2) 
+{
+    showDivs(slideIndex[n2] += n1, n2);
+}
+
+function showDivs(n1, n2) 
+{
+    var i;
+    var x = document.getElementsByClassName(slideId[n2]);
+
+    if (n1 > x.length) 
+    {
+        slideIndex[n2] = 1;
+    }
+
+    if (n1 < 1)  
+    {
+        slideIndex[n2] = x.length;
+    }
+
+    for (i = 0; i < x.length; i++) 
+    {
+        x[i].style.display = "none";
+    }
+
+    x[slideIndex[n2] - 1].style.display = "block";
+}
+
+var index = 1;
+mostrarDivs(index);
+
+function masDivs(n) 
+{
+    mostrarDivs(index += n);
+}
+
+function mostrarDivs(n)
+{
+    var j;
+    var y = document.getElementsByClassName("slide3");
+
+    if (n > y.length) 
+    {
+        index = 1;
+    }
+
+    if (n < 1)
+    {
+        index = y.length;
+    }
+
+    for (j = 0; j < y.length; j++)
+    {
+        y[j].style.display = "none";
+    }
+
+    y[index -1].style.display = "block";
+} 
+//endSliders

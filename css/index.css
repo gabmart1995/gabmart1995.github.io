@@ -68,6 +68,13 @@ h3 {
     text-align: center;
 }
 
+h5 {
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
 article {
     margin-left: 25px;
     margin-right: 25px;
@@ -170,12 +177,20 @@ figure > figcaption {
 }
 
 #portafolio summary {
-    margin-left: 25px;
+    text-align: center;
+}
+
+#portafolio summary i {
+    margin-right: 10px;
+}
+
+#portafolio summary:hover {
+    color: #f44336;
 }
 
 #portafolio h3 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 #portafolio h4 {

@@ -3,6 +3,10 @@
     Estilos CSS
     Autor: Gabriel Martínez
 */
+html {
+    /*Deplazamiento de la pagina*/
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: 100%;

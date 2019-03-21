@@ -72,6 +72,11 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
 h5 {
     text-align: center;
     margin-top: 25px;
@@ -252,7 +257,15 @@ progress::-webkit-progress-value {
     border-radius: 10px;
 }
 
-#habilidades ul li {
+/*Seccion competencias*/
+#competencias {
+    background-color: #313131;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#competencias ul li {
     margin-bottom: 20px;
 }
 
@@ -265,8 +278,8 @@ progress::-webkit-progress-value {
 }
 
 #acerca p {
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #acerca figure img {
@@ -276,6 +289,12 @@ progress::-webkit-progress-value {
 }
 
 /*Sección contacto*/
+
+#contacto {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 #contacto p {
     margin-bottom: 25px;
 }

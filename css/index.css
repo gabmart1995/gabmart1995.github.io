@@ -267,6 +267,8 @@ progress::-webkit-progress-value {
 
 #competencias ul li {
     margin-bottom: 20px;
+    text-align: justify;
+    margin-right: 25px;
 }
 
 /*Sección acerca*/

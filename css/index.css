@@ -245,16 +245,13 @@ figure > figcaption {
     width: 250px;
     height: 20px;  
     color: #f44336;
-    border-radius: 10px; 
 }
 
 progress::-moz-progress-bar { 
     background: #f44336; 
-    border-radius: 10px;
 }
 progress::-webkit-progress-value { 
     background: #f44336; 
-    border-radius: 10px;
 }
 
 /*Seccion competencias*/

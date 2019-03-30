@@ -134,7 +134,7 @@ figure > figcaption {
   }
 
 /*Seccion servicios*/
-#servicios div {
+#servicios {
     padding-bottom: 25px;
     padding-top: 25px;
 }
@@ -165,9 +165,9 @@ figure > figcaption {
 }
 
 /*Seccion protafolio*/
-#portafolio div {
+#portafolio {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     background-color: #313131;
     color: white;
 }
@@ -211,7 +211,7 @@ figure > figcaption {
 }
 
 /*Sección habilidades*/
-#habilidades div {
+#habilidades {
     padding-bottom: 25px;
     padding-top: 25px;
 }
@@ -227,6 +227,8 @@ figure > figcaption {
     background-color: #313131;
     border-radius: 10px;
     border: 1px solid gray;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 .medicion span {
@@ -264,7 +266,7 @@ progress::-webkit-progress-value {
 }
 
 /*Sección acerca*/
-#acerca div {
+#acerca {
     padding-bottom: 10px;
     padding-top: 10px; 
     background-color: #313131;
@@ -280,6 +282,14 @@ progress::-webkit-progress-value {
     border-radius: 100px;
     height: 200px;
     width: 200px;
+}
+
+figcaption 
+{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 /*Sección contacto*/

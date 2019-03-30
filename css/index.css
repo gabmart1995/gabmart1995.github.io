@@ -146,6 +146,8 @@ figure > figcaption {
 
 .icono {
     margin-left: 0%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .icono i{

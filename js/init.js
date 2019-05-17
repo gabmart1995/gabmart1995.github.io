@@ -1,116 +1,68 @@
 /*
-    JavaScript version 1.0
+    JavaScript version 2.0
     Autor Gabriel Martínez
 */ 
-
-//carga la funcion cuando carga la pagina (Barra de progreso)
-window.onload = function() 
+function $(selector)
 {
-    var html = document.getElementById('html5');
-    var php = document.getElementById('php');
-    var css = document.getElementById('css3');
-    var js = document.getElementById('js');
-    var sql = document.getElementById('sql');
-    var java = document.getElementById('java');
-    var bash = document.getElementById('bash');
-    var laravel = document.getElementById('laravel');
-
-    //html5
-    var idInterval = setInterval(function() 
-    {
-        html.value += 5;
-
-        if (html.value == 90) 
-        {   
-            clearInterval(idInterval);
-        }
-
-    }, 30);
-
-    //php
-    var idInterval2 = setInterval(function() 
-    {
-        php.value += 5;
-
-        if (php.value == 70) 
-        {
-            clearInterval(idInterval2);
-        }
-
-    }, 30);
-
-    //css3
-    var idInterval3 = setInterval(function() 
-    {
-        css.value += 5;
-
-        if (css.value == 50) 
-        {
-            clearInterval(idInterval3);
-        }
-
-    }, 30);
-
-    //js
-    var idInterval4 = setInterval(function() 
-    {
-        js.value += 5;
-
-        if (js.value == 45) 
-        {
-            clearInterval(idInterval4);
-        }
-
-    }, 30);
-
-    //sql
-    var idInterval5 = setInterval(function() 
-    {
-        sql.value += 5;
-
-        if (sql.value == 55) 
-        {
-            clearInterval(idInterval5);
-        }
-
-    }, 30);
-
-    //java
-    var idInterval6 = setInterval(function() 
-    {
-        java.value += 5;
-
-        if (java.value == 60) 
-        {
-            clearInterval(idInterval6);
-        }
-
-    }, 30);
-
-    //bash
-    var idInterval7 = setInterval(function() 
-    {
-        bash.value += 5;
-
-        if (bash.value == 55) 
-        {
-            clearInterval(idInterval7);
-        }
-
-    }, 30);
-
-    //java
-    var idInterval8 = setInterval(function() 
-    {
-        laravel.value += 5;
-
-        if (laravel.value == 50) 
-        {
-            clearInterval(idInterval8);
-        }
-
-    }, 30);
+    return document.querySelector(selector);
 }
+
+//Objeto Bar
+(function()
+{
+    self.Bar = function(selector, limite)
+    {
+        this.tiempo = 30;
+        this.selector = selector;
+        this.limite = limite
+    }
+
+    //añade el objeto a la funcion
+    self.Bar.prototype = 
+    { 
+        increment : function()
+        {
+            let lim = this.limite;
+            let etiq = this.selector;
+    
+            let animacion = setInterval(function()
+            {
+                if (etiq.value <= lim)
+                {
+                    etiq.value += 5;
+                }
+
+                else 
+                {
+                    clearInterval(animacion);
+                }
+
+            }, this.tiempo);
+        }
+    }
+})();
+
+//instanciacion de objetos
+var html = new Bar($("#html5"), 90);
+var php = new Bar($("#php"), 70);
+var css = new Bar($("#css3"), 50);
+var js = new Bar($("#js"), 75);
+var sql = new Bar($("#sql"), 55);
+var java = new Bar($("#java"), 60);
+var bash = new Bar($("#bash"), 55);
+var laravel = new Bar($("#laravel"), 50);
+
+window.addEventListener("load", function()
+{
+    html.increment();
+    php.increment();
+    css.increment();
+    js.increment();
+    sql.increment();
+    java.increment();
+    bash.increment();
+    laravel.increment();
+});
 
 //Sliders
 var slideIndex = [1, 1];

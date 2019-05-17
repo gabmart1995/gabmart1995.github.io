@@ -7,14 +7,14 @@ function $(selector)
     return document.querySelector(selector);
 }
 
-//Objeto Bar
+//Objeto Barras de Progreso
 (function()
 {
-    self.Bar = function(selector, limite)
+    self.Bar = function(selector, limit)
     {
-        this.tiempo = 30;
+        this.time = 30;
         this.selector = selector;
-        this.limite = limite
+        this.limit = limit
     }
 
     //añade el objeto a la funcion
@@ -22,10 +22,10 @@ function $(selector)
     { 
         increment : function()
         {
-            let lim = this.limite;
+            let lim = this.limit;
             let etiq = this.selector;
     
-            let animacion = setInterval(function()
+            let animation = setInterval(function()
             {
                 if (etiq.value <= lim)
                 {
@@ -34,10 +34,10 @@ function $(selector)
 
                 else 
                 {
-                    clearInterval(animacion);
+                    clearInterval(animation);
                 }
 
-            }, this.tiempo);
+            }, this.time);
         }
     }
 })();

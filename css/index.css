@@ -11,7 +11,7 @@ html {
 body {
     font-size: 100%;
     background-color: whitesmoke;
-    font-family: "URW Gothic L", "Century Gothic";
+    font-family: "Arial";
     margin: 0; /*Sin márgenes*/
 }
 
@@ -243,15 +243,19 @@ figure > figcaption {
     border: none;
     width: 250px;
     height: 20px;  
-    color: #f44336;
+}
+
+progress::-webkit-progress-value { 
+    background: #f44336; 
 }
 
 progress::-moz-progress-bar { 
     background: #f44336; 
 }
-progress::-webkit-progress-value { 
-    background: #f44336; 
-}
+
+progress::-o-progress-value {
+    background: #f44336;
+} 
 
 /*Seccion competencias*/
 #competencias {

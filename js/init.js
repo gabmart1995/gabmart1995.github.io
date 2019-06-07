@@ -1,59 +1,51 @@
-/*
-    JavaScript version 2.0
-    Autor Gabriel Martínez
-*/ 
+// =======================================
+//		Class Barra									
+// =======================================
+class Barra {
+    
+    constructor(selector, limite) {
+        this.tiempo = 30
+        this.selector = selector;
+        this.limite = limite;
+    }
+
+    increment() {
+
+        var selector = this.selector;
+        var limite = this.limite;
+        
+        var animation = setInterval(() => {
+            if (selector.value <= limite) {
+                selector.value += 5;
+            }
+            else {
+                clearInterval(animacion);
+            }
+        }, this.tiempo);
+    }
+};
+
+// =======================================
+//				Selector							
+// =======================================
 function $(selector)
 {
     return document.querySelector(selector);
 }
 
-//Objeto Barras de Progreso
-(function()
-{
-    self.Bar = function(selector, limit)
-    {
-        this.time = 30;
-        this.selector = selector;
-        this.limit = limit
-    }
+// =======================================
+//		    Instancion de objetos							
+// =======================================
+var html = new Barra($("#html5"), 90);
+var php = new Barra($("#php"), 70);
+var css = new Barra($("#css3"), 50);
+var js = new Barra($("#js"), 75);
+var sql = new Barra($("#sql"), 55);
+var java = new Barra($("#java"), 60);
+var bash = new Barra($("#bash"), 55);
+var laravel = new Barra($("#laravel"), 50);
 
-    //añade el objeto a la funcion
-    self.Bar.prototype = 
-    { 
-        increment : function()
-        {
-            let lim = this.limit;
-            let etiq = this.selector;
-    
-            let animation = setInterval(function()
-            {
-                if (etiq.value <= lim)
-                {
-                    etiq.value += 5;
-                }
-
-                else 
-                {
-                    clearInterval(animation);
-                }
-
-            }, this.time);
-        }
-    }
-})();
-
-//instanciacion de objetos
-var html = new Bar($("#html5"), 90);
-var php = new Bar($("#php"), 70);
-var css = new Bar($("#css3"), 50);
-var js = new Bar($("#js"), 75);
-var sql = new Bar($("#sql"), 55);
-var java = new Bar($("#java"), 60);
-var bash = new Bar($("#bash"), 55);
-var laravel = new Bar($("#laravel"), 50);
-
-window.addEventListener("load", function()
-{
+window.addEventListener("load", () => {
     html.increment();
     php.increment();
     css.increment();
@@ -64,9 +56,12 @@ window.addEventListener("load", function()
     laravel.increment();
 });
 
-//Sliders
+// =======================================
+//				Slider doble							
+// =======================================
 var slideIndex = [1, 1];
 var slideId = ["slide1", "slide2"];
+
 showDivs(1, 0);
 showDivs(1, 1);
 
@@ -98,34 +93,32 @@ function showDivs(n1, n2)
     x[slideIndex[n2] - 1].style.display = "block";
 }
 
+// =======================================
+//         Slider 3											
+// =======================================
 var index = 1;
+
 mostrarDivs(index);
 
-function masDivs(n) 
-{
+function masDivs(n) {
     mostrarDivs(index += n);
 }
 
-function mostrarDivs(n)
-{
+function mostrarDivs(n) {
     var j;
     var y = document.getElementsByClassName("slide3");
 
-    if (n > y.length) 
-    {
+    if (n > y.length) {
         index = 1;
     }
 
-    if (n < 1)
-    {
+    if (n < 1) {
         index = y.length;
     }
 
-    for (j = 0; j < y.length; j++)
-    {
+    for (j = 0; j < y.length; j++) {
         y[j].style.display = "none";
     }
 
     y[index -1].style.display = "block";
-} 
-//endSliders
+}

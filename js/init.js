@@ -4,17 +4,17 @@
 class Barra {
     
     constructor(selector, limite) {
-        this.tiempo = 30
+        this.tiempo = 30;
         this.selector = selector;
         this.limite = limite;
     }
 
-    increment() {
+    incrementar() {
 
-        var selector = this.selector;
-        var limite = this.limite;
+        let selector = this.selector;
+        let limite = this.limite;
         
-        var animation = setInterval(() => {
+        let animacion = setInterval(() => {
             if (selector.value <= limite) {
                 selector.value += 5;
             }
@@ -26,12 +26,40 @@ class Barra {
 };
 
 // =======================================
-//				Selector							
+//				Class Slider							
 // =======================================
-function $(selector)
-{
-    return document.querySelector(selector);
-}
+class Slider {
+
+    constructor(slideId) {
+        this.sliderClass = ['slide1', 'slide2', 'slide3'];
+        this.index = 1;
+        this.slideId = slideId;
+    }
+
+    obtenerDivs(numero) {
+        this.mostrarDivs(this.index += numero);
+    }
+
+    mostrarDivs(numero) {
+        
+        let selector = document.getElementsByClassName(this.sliderClass[this.slideId]);
+
+        if (numero > selector.length) {
+            this.index = 1;
+        }
+    
+        if (numero < 1) {
+            this.index = selector.length;
+        }
+    
+        for (let i = 0; i < selector.length; i++) {
+            selector[i].style.display = "none";
+        }
+        
+        // retorna la visualizacion de la imagen
+        selector[this.index -1].style.display = "block";
+    }
+};
 
 // =======================================
 //		    Instancion de objetos							
@@ -45,80 +73,49 @@ var java = new Barra($("#java"), 60);
 var bash = new Barra($("#bash"), 55);
 var laravel = new Barra($("#laravel"), 50);
 
+var slider1 = new Slider(0);
+var slider2 = new Slider(1);
+var slider3 = new Slider(2);
+
+// =======================================
+//			Ejecucion del Slider							
+// =======================================
+slider1.mostrarDivs(1);
+slider2.mostrarDivs(1);
+slider3.mostrarDivs(1);
+
+// =======================================
+//		   Incrementar Barras							
+// =======================================
 window.addEventListener("load", () => {
-    html.increment();
-    php.increment();
-    css.increment();
-    js.increment();
-    sql.increment();
-    java.increment();
-    bash.increment();
-    laravel.increment();
+    html.incrementar();
+    php.incrementar();
+    css.incrementar();
+    js.incrementar();
+    sql.incrementar();
+    java.incrementar();
+    bash.incrementar();
+    laravel.incrementar();
 });
 
 // =======================================
-//				Slider doble							
+//		Funciones Globales							
 // =======================================
-var slideIndex = [1, 1];
-var slideId = ["slide1", "slide2"];
+function masDivs(numero, slideId) {
+    
+    if (slideId === 0) {
+       slider1.obtenerDivs(numero) 
+    }
+    
+    else if (slideId === 1) {
+        slider2.obtenerDivs(numero);
+    }
 
-showDivs(1, 0);
-showDivs(1, 1);
-
-function plusDivs(n1, n2) 
-{
-    showDivs(slideIndex[n2] += n1, n2);
+    else {
+        slider3.obtenerDivs(numero);
+    }
 }
 
-function showDivs(n1, n2) 
-{
-    var i;
-    var x = document.getElementsByClassName(slideId[n2]);
-
-    if (n1 > x.length) 
-    {
-        slideIndex[n2] = 1;
-    }
-
-    if (n1 < 1)  
-    {
-        slideIndex[n2] = x.length;
-    }
-
-    for (i = 0; i < x.length; i++) 
-    {
-        x[i].style.display = "none";
-    }
-
-    x[slideIndex[n2] - 1].style.display = "block";
-}
-
-// =======================================
-//         Slider 3											
-// =======================================
-var index = 1;
-
-mostrarDivs(index);
-
-function masDivs(n) {
-    mostrarDivs(index += n);
-}
-
-function mostrarDivs(n) {
-    var j;
-    var y = document.getElementsByClassName("slide3");
-
-    if (n > y.length) {
-        index = 1;
-    }
-
-    if (n < 1) {
-        index = y.length;
-    }
-
-    for (j = 0; j < y.length; j++) {
-        y[j].style.display = "none";
-    }
-
-    y[index -1].style.display = "block";
+function $(selector) {
+    return document.querySelector(selector);
 }

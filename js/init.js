@@ -1,5 +1,5 @@
 // =======================================
-//		Class Barra									
+//		        Class Barra									
 // =======================================
 class Barra {
     
@@ -26,7 +26,7 @@ class Barra {
 };
 
 // =======================================
-//				Class Slider							
+//		        Class Slider							
 // =======================================
 class Slider {
 
@@ -64,14 +64,15 @@ class Slider {
 // =======================================
 //		    Instancion de objetos							
 // =======================================
-var html = new Barra($("#html5"), 90);
-var php = new Barra($("#php"), 70);
-var css = new Barra($("#css3"), 50);
-var js = new Barra($("#js"), 75);
-var sql = new Barra($("#sql"), 55);
-var java = new Barra($("#java"), 60);
-var bash = new Barra($("#bash"), 55);
-var laravel = new Barra($("#laravel"), 50);
+var html = new Barra( $("#html5"), 90 );
+var php = new Barra( $("#php"), 70 );
+var css = new Barra( $("#css3"), 50 );
+var js = new Barra( $("#js"), 75 );
+var sql = new Barra( $("#sql"), 55 );
+var java = new Barra( $("#java"), 60 );
+var bash = new Barra( $("#bash"), 55 );
+var laravel = new Barra( $("#laravel"), 50 );
+var angular = new Barra( $("#angular"), 70 );
 
 var slider1 = new Slider(0);
 var slider2 = new Slider(1);
@@ -96,6 +97,7 @@ window.addEventListener("load", () => {
     java.incrementar();
     bash.incrementar();
     laravel.incrementar();
+    angular.incrementar();
 });
 
 // =======================================

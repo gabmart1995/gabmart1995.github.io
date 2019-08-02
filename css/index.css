@@ -12,7 +12,7 @@ body {
     font-size: 100%;
     background-color: whitesmoke;
     font-family: "Arial";
-    margin: 0; /*Sin márgenes*/
+    margin: 0 auto; /*Sin márgenes*/
 }
 
 header {
@@ -174,14 +174,6 @@ figure > figcaption {
     color: white;
 }
 
-#portafolio figure img {
-    height: 350px;
-    width: 550px;
-    border-radius: 10px; 
-    margin-bottom: 25px;
-    margin-top: 50px;
-}
-
 #portafolio summary {
     text-align: center;
 }
@@ -210,6 +202,14 @@ figure > figcaption {
 
 #portafolio a:hover {
     color: #f44336;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 /*Sección habilidades*/
@@ -342,6 +342,7 @@ footer {
 footer p {
     text-align: center;
 }
+
 
 /*Media queries > 900px*/
 @media screen and (min-width: 900px) {

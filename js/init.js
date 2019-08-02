@@ -3,7 +3,8 @@
 // =======================================
 class Barra {
     
-    constructor(selector, limite) {
+    constructor( selector, limite ) {
+        
         this.tiempo = 30;
         this.selector = selector;
         this.limite = limite;
@@ -15,12 +16,14 @@ class Barra {
         let limite = this.limite;
         
         let animacion = setInterval(() => {
-            if (selector.value <= limite) {
+            
+            if ( selector.value <= limite ) {
                 selector.value += 5;
             }
             else {
-                clearInterval(animacion);
+                clearInterval( animacion );
             }
+
         }, this.tiempo);
     }
 };
@@ -30,29 +33,30 @@ class Barra {
 // =======================================
 class Slider {
 
-    constructor(slideId) {
+    constructor( slideId ) {
+        
         this.sliderClass = ['slide1', 'slide2', 'slide3'];
         this.index = 1;
         this.slideId = slideId;
     }
 
-    obtenerDivs(numero) {
+    obtenerDivs( numero ) {
         this.mostrarDivs(this.index += numero);
     }
 
-    mostrarDivs(numero) {
+    mostrarDivs( numero ) {
         
-        let selector = document.getElementsByClassName(this.sliderClass[this.slideId]);
+        let selector = document.getElementsByClassName( this.sliderClass[this.slideId] );
 
-        if (numero > selector.length) {
+        if ( numero > selector.length ) {
             this.index = 1;
         }
     
-        if (numero < 1) {
+        if ( numero < 1 ) {
             this.index = selector.length;
         }
     
-        for (let i = 0; i < selector.length; i++) {
+        for ( let i = 0; i < selector.length; i++ ) {
             selector[i].style.display = "none";
         }
         
@@ -88,7 +92,7 @@ slider3.mostrarDivs(1);
 // =======================================
 //		   Incrementar Barras							
 // =======================================
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
     html.incrementar();
     php.incrementar();
     css.incrementar();
@@ -103,21 +107,21 @@ window.addEventListener("load", () => {
 // =======================================
 //		Funciones Globales							
 // =======================================
-function masDivs(numero, slideId) {
+function masDivs( numero, slideId ) {
     
     if (slideId === 0) {
-       slider1.obtenerDivs(numero) 
+       slider1.obtenerDivs( numero ) 
     }
     
     else if (slideId === 1) {
-        slider2.obtenerDivs(numero);
+        slider2.obtenerDivs( numero );
     }
 
     else {
-        slider3.obtenerDivs(numero);
+        slider3.obtenerDivs( numero );
     }
 }
 
-function $(selector) {
+function $( selector ) {
     return document.querySelector(selector);
 }

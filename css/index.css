@@ -17,7 +17,7 @@ body {
 
 header {
     border: 1px solid black;
-    background-image: url(./../img/dark-computer.jpg);
+    background-image: url(./../img/dark-computer_300x300.jpg);
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;

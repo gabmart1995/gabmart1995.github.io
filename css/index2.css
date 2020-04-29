@@ -18,8 +18,8 @@ p {
 }
 
 .services {
-	padding-top: 5vh;
-	padding-top: 5vh;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
 }
 
 .about {
@@ -27,7 +27,6 @@ p {
 	margin-bottom: 5vh;
 	background-color: : #b3b6b7;
 }
-
 
 .text-justify {
 	text-align: justify;
@@ -49,4 +48,29 @@ p {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
+}
+
+.competencies {
+	background-color: #17202a;
+	color: white;
+}
+
+.competencies h3 {
+	margin-top: 5vw;
+}
+
+.competencies li {
+	color: black;
+	font-family: "arial";
+	font-size: 12px;
+}
+
+.card {
+	margin: 5vw;
+	background: white;
+	color: black;
+}
+
+.pb-2 {
+	padding-bottom: 15px;
 }

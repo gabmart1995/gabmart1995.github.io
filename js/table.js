@@ -1,9 +1,11 @@
 // TODOS
 let todos = [];
 const form = document.forms['form-table'];
+const formModal = document.forms['form-modal'];
 const table = document.getElementById('tbody');
   
 form.addEventListener( 'submit', createTodo );
+formModal.addEventListener( 'submit', editTodo );
 
 class Todo {  
   constructor( name, description ) {
@@ -20,7 +22,7 @@ function showTable() {
   
     if ( todos.length > 0 ) {
   
-      todos.forEach( function ( element, index ) {
+      todos.forEach( ( element, index ) => {
         
         table.innerHTML += `
           <tr>
@@ -29,16 +31,16 @@ function showTable() {
             <td class="w3-center">${ element.description }</td>
             <td class="w3-center">
               ${ element.completed ? 
-                `<i class="fas fa-times w3-margin-right" onclick="completeTodo( ${ element.id } )"></i>` : 
-                `<i class="fas fa-check w3-margin-right" onclick="completeTodo( ${ element.id } )"></i>` 
+                `<i class="point fas fa-times w3-margin-right" onclick="completeTodo( ${ element.id } )"></i>` : 
+                `<i class="point fas fa-check w3-margin-right" onclick="completeTodo( ${ element.id } )"></i>` 
               }
-              <i class="fas fa-pen w3-margin-right" onclick="showModal( true, {
+              <i class="point fas fa-pen w3-margin-right" onclick="showModal( true, {
                 id: ${ element.id },
                 name: '${ element.name }',
                 description: '${ element.description }'
                 })"
               ></i>
-              <i class="fas fa-trash" onclick="removeTodo( ${ element.id } )"></i>
+              <i class="point fas fa-trash" onclick="removeTodo( ${ element.id } )"></i>
         
             </td>
           </tr>
@@ -62,8 +64,8 @@ function createTodo( $event ) {
     new Todo( formulario.get('name'), formulario.get('description') ) 
   );
 
-  form[0].value = '';
-  form[1].value = '';
+  form['name'].value = '';
+  form['description'].value = '';
 
   showTable();
 
@@ -83,17 +85,35 @@ function completeTodo( todoId ) {
           ...todo,
           completed: !todo.completed
         };
+      } 
 
-      } else {
-          return todo;
-      }
+      return todo;
   });
 
   showTable();
 }
 
-function editTodo( todo ) {
-  console.log( todo );
+function editTodo( $event ) {
+
+  const editForm = new FormData( formModal );
+
+  todos = todos.map( ( todo ) => {
+
+    if ( todo.id === +editForm.get('id') ) {
+      return {
+        ...todo,
+        name: editForm.get('name'),
+        description: editForm.get('description')
+      }
+    }
+
+    return todo
+  });
+
+  showModal( false );
+  showTable();
+
+  $event.preventDefault();
 }
 
 
@@ -107,11 +127,14 @@ function addCompleted( span, completed ) {
   }
 }
 
-function showModal( action, todo = null ) {
+function showModal( open, todo = null ) {
 
   const modal = document.getElementById('modal-table');
   
-  if ( action && todo !== null ) {
+  if ( open && todo !== null ) {
+    formModal['name'].value = todo.name;
+    formModal['description'].value = todo.description;
+    formModal['id'].value = todo.id;
     modal.style.display = 'block';
   
   } else {

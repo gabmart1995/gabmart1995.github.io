@@ -102,3 +102,16 @@ p {
 	background-color: white;
 	color: black;
 }
+
+.header-modal {
+	background: lightgray;
+	color: black;
+}
+
+.point {
+	cursor: pointer;
+}
+
+.portafolio ul li {
+	font-size: 13px;
+}

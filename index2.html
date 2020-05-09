@@ -115,7 +115,7 @@
         <h3>Habilidades</h3>
       </div>
       <div class="w3-row">
-        <div class="w3-col s4">
+        <div class="w3-col  s12 m4">
           <h5 class="w3-center subtitle">Desarrollo web</h5>
           <p class="text-justify">
             En la parte de la programación web me centro en el desarrollo de los principales 
@@ -123,13 +123,13 @@
           </p>
 
         </div>
-        <div class="w3-col s4">
+        <div class="w3-col  s12 m4">
           <h5 class="w3-center subtitle">Desarrollo de aplicaciones</h5>
           <p class="text-justify">
             En el desarrollo de aplicaciones me concentro en las tecnologías de desarrollo en diversas plataformas.
           </p>
         </div>
-        <div class="w3-col s4">
+        <div class="w3-col  s12 m4">
           <h5 class="w3-center subtitle">Frameworks y Librerías</h5>
           <p class="text-justify">
             En el mundo actual, la creación de las aplicaciones se realiza a una velocidad muy rápida, existen tecnologías que aceleran el proceso de diseño y desarrollo.
@@ -147,7 +147,7 @@
 		</div>
 
     <div class="w3-row w3-center w3-padding-24">
-      <div class="w3-col">
+      <div class="w3-col s12">
         <p class="text-justify w3-medium italic">
           "Durante mi periodo de experiencia programanado, Nunca imagine conocer esta forma tan 
           increible de como funciona el mundo. Permitiendo ver más allá de lo simplemente ignoran las
@@ -159,7 +159,12 @@
     <section class="portafolio">
       <div class="w3-row w3-padding-24">
         <h3 class="w3-center">Portafolio Personal</h3>
-        <h5>Lista de tareas</h5>
+        <h5>1.- Cambio de estado: Lista de tareas</h5>
+        <p class="w3-center">
+          A simple vista puede parecer una sencilla lista de tareas pero no lo es.
+          Este componente crea desde el formulario una tarea y desde la tabla se puede
+          gestionar el estado de la misma. Te animo a que pruebes.
+        </p>
       </div>
 
       <div class="w3-row">
@@ -187,7 +192,7 @@
             ></textarea>
             <div class="flex-around">
               <button type="reset" class="w3-button w3-white">Cancelar</button>
-              <button type="submit"  class="w3-button w3-green">Añadir</button>
+              <button type="submit"  class="w3-button w3-blue">Añadir</button>
             </div>
           </form>
           </div>
@@ -196,28 +201,74 @@
 
       <!-- The Modal -->
     <div id="modal-table" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container padding-modal">
-        <span onclick="showModal( false )"
-        class="w3-button w3-display-topright">&times;</span>
-        <form class="w3-container" name="form-table">
-          <input class="w3-input w3-border w3-margin-bottom" 
-            type="text" name="name" placeholder="nombre de la tarea">
-          <textarea type="text" name="description" placeholder="Descripcion"
-            class="w3-input w3-border w3-margin-bottom"
-          ></textarea>
-          <div class="flex-around">
-            <button type="reset" class="w3-button w3-white">Cancelar</button>
-            <button type="submit"  class="w3-button w3-green">Añadir</button>
+      <div class="w3-modal-content">
+        <form name="form-modal">
+          <header class="w3-container">
+              <span 
+                onclick="showModal( false )"
+                class="w3-button w3-display-topright">
+                &times;
+              </span>
+              <h3>Editar tarea:</h3>
+          </header>
+    
+          <div class="w3-container padding-modal">
+            <input type="text" hidden name="id" />
+            <input class="w3-input w3-border w3-margin-bottom" 
+              type="text" name="name" placeholder="nombre de la tarea" />
+            <textarea type="text" name="description" placeholder="Descripcion"
+              class="w3-input w3-border w3-margin-bottom"
+            ></textarea>
           </div>
+
+          <footer class="w3-container w3-padding-24 flex-around">
+              <button 
+                type="reset" 
+                onclick="showModal( false )" 
+                class="w3-button w3-white"
+              >Cancelar</button>
+              <button type="submit"  class="w3-button w3-blue">Modificar</button>
+          </footer>
         </form>
       </div>
-      </div>
     </div>
+
+      <h4>Lecciones aprendidas:</h4>
+      <ul>
+        <li>Comunicación entre componentes</li>
+        <li>Pasar datos dinamicos entre formularios, tablas y modales</li>
+        <li>Manipulaciones de eventos</li>
+        <li>Manejo de estado de componentes</li>
+        <li>Si quieres ver el proyecto completo consulta 
+          <a href="https://gabmart1995.github.io/todoapp/" target="_blank">todoapp</a>
+        </li>
+      </ul>
+
+      <div class="w3-row w3-padding-24">
+        <h5>2.- Peticiones a APIRest: Generador de usuarios aleatorio</h5>
+        <p class="w3-center">
+        ¿Quieres obtener recursos y utilizarlos en tus aplicaciones? Existen
+        APIRestful que permiten consultas y consumos de servicios digitales.
+        Haciendo un modelo de negocio atractivo para inversionistas, debido a que es uno de 
+        los mejores negocios de la actualidad, junto a telecomunicaciones y seguridad informática.
+        </p>
+      </div>
+
+      <div class="w3-row">
+        <div class="w3-col m4 w3-center">
+          <button class="w3-button w3-blue" onclick="getResource()">
+            <i class="fas fa-user w3-margin-right"></i>
+            Generar usuario
+          </button>
+        </div>
+        <div class="w3.col m8" id="content-api">
+        </div>
+      </div>
   
     </section>
 
     <script src="./js/canvas.js"></script>
     <script src="./js/table.js"></script>
+    <script src="./js/fetch.js"></script>
 	</body>
 </html> 

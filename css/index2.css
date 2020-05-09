@@ -82,8 +82,23 @@ p {
 .portafolio {
 	background-color: #17202a;
 	color: white;
+	padding: 15px 30px 15px 30px; 
 }
 
 .subtitle {
 	text-decoration: underline;
+}
+
+.w3-modal p {
+	color: black;
+}
+
+.padding-modal {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#tbody > tr {
+	background-color: white;
+	color: black;
 }

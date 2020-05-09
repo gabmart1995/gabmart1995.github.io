@@ -179,10 +179,10 @@
         </div>
         <div class="w3-col s12 m4 w3-padding-12">
           <p class="w3-center">Tareas completadas: <span>0</span></p>
-          <form class="w3-container" id="form">
+          <form class="w3-container" name="form-table">
             <input class="w3-input w3-border w3-margin-bottom" 
-              type="text" name="todoName" placeholder="nombre de la tarea">
-            <textarea type="text" name="todoDescription" placeholder="Descripcion"
+              type="text" name="name" placeholder="nombre de la tarea">
+            <textarea type="text" name="description" placeholder="Descripcion"
               class="w3-input w3-border w3-margin-bottom"
             ></textarea>
             <div class="flex-around">
@@ -193,11 +193,31 @@
           </div>
         </div>
       </div>
-      
 
+      <!-- The Modal -->
+    <div id="modal-table" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container padding-modal">
+        <span onclick="showModal( false )"
+        class="w3-button w3-display-topright">&times;</span>
+        <form class="w3-container" name="form-table">
+          <input class="w3-input w3-border w3-margin-bottom" 
+            type="text" name="name" placeholder="nombre de la tarea">
+          <textarea type="text" name="description" placeholder="Descripcion"
+            class="w3-input w3-border w3-margin-bottom"
+          ></textarea>
+          <div class="flex-around">
+            <button type="reset" class="w3-button w3-white">Cancelar</button>
+            <button type="submit"  class="w3-button w3-green">Añadir</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  
     </section>
 
-    <script src="./js/index2.js"></script>
+    <script src="./js/canvas.js"></script>
     <script src="./js/table.js"></script>
 	</body>
 </html> 

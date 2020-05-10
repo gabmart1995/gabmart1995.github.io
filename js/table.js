@@ -81,10 +81,7 @@ function completeTodo( todoId ) {
         const totalTodo = document.getElementsByTagName('span');
         addCompleted( totalTodo[0], !todo.completed );
 
-        return {
-          ...todo,
-          completed: !todo.completed
-        };
+        todo.completed = !todo.completed;
       } 
 
       return todo;
@@ -100,11 +97,9 @@ function editTodo( $event ) {
   todos = todos.map( ( todo ) => {
 
     if ( todo.id === +editForm.get('id') ) {
-      return {
-        ...todo,
-        name: editForm.get('name'),
-        description: editForm.get('description')
-      }
+      
+      todo.name = editForm.get('name');
+      todo.description = editForm.get('description');
     }
 
     return todo

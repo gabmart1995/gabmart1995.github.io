@@ -8,13 +8,13 @@ header {
 	color: white;
 }
 
-header > .title {
+header>.title {
 	font-family: "arial";
 }
 
 p {
 	font-family: "arial";
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .services {
@@ -29,7 +29,7 @@ p {
 
 .text-justify {
 	text-align: justify;
-	margin: 5vw;
+	margin: 3vw;
 }
 
 .w-100 {
@@ -98,7 +98,7 @@ p {
 	padding-bottom: 20px;
 }
 
-#tbody > tr {
+#tbody>tr {
 	background-color: white;
 	color: black;
 }
@@ -114,4 +114,23 @@ p {
 
 .portafolio ul li {
 	font-size: 13px;
+
+}
+.portafolio .user {
+	margin-left: 30vw;
+	margin-right: 30vw;
+	border-radius: 10px;
+}
+
+.portafolio .user span {
+	font-weight: bold;
+}
+
+.portafolio .justify {
+	text-align: justify;
+}
+
+.frase {
+	margin-left: 10vw;
+	margin-right: 10vw;
 }

@@ -113,13 +113,7 @@ function editTodo( $event ) {
 
 
 function addCompleted( span, completed ) {
-  
-  if ( completed ) {
-    span.innerText = parseInt( span.innerText ) + 1
-  
-  } else {
-    span.innerText = parseInt( span.innerText ) - 1
-  }
+  span.innerText = completed ? parseInt( span.innerText ) + 1 :  parseInt( span.innerText ) - 1; 
 }
 
 function showModal( open, todo = null ) {

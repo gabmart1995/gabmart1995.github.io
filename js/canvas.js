@@ -1,4 +1,10 @@
 //  canvas
+const canvas = document.getElementsByTagName('canvas');
+
+// -----------------------------------------------------  //
+
+// eifel
+
 function drawLine( color, xInit, xFinish, yInit, yFinish, pad  ) {
 	pad.beginPath();
 	pad.strokeStyle = color;
@@ -8,7 +14,8 @@ function drawLine( color, xInit, xFinish, yInit, yFinish, pad  ) {
 	pad.closePath();
 }
 
-const eifel = document.getElementById('eifel');
+const eifel = canvas[0]; 
+
 const context = eifel.getContext('2d');
 
 const lines = 30;

@@ -77,10 +77,12 @@
 	margin-top: 5vw;
 }
 
-.competencies li {
+.competencies li, strong {
+	font-size: 13px;
+}
+
+.competencies {
 	color: black;
-	font-family: "arial";
-	font-size: 12px;
 }
 
 .card {
@@ -161,5 +163,9 @@
 footer {
 	padding-top: 3vh;
 	padding-bottom: 3vh;
+}
+
+.col-special {
+	margin-top: 20px;
 }
 

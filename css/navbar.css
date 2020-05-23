@@ -50,7 +50,7 @@
 }
 
 /*Media queries   600px < 899px*/
-@media screen and (max-width: 599px) 
+@media screen and (min-height: 350px) and (max-width: 599px) 
 {
     nav ul 
     {
@@ -82,5 +82,36 @@
     nav li a:hover:not(.active) 
     {
         background-color: #111;
+    }
+
+    .text-justify {
+        text-align: justify;
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    .portafolio .user {
+        margin: 0;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px; 
+    }
+
+    .img {
+        max-width: 100%;
+    }
+
+    .card {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    .fa-3x {
+        font-size: 2em;
+    }
+
+    .mb-res {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }

@@ -1,39 +1,15 @@
-/* Barra de Navegación*/
-/*Media queries > 900px*/
-@media screen and (min-width: 900px) {
-    nav > ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 25%;
-        background-color: #212121;
+@media screen and (min-width: 600px) {
+
+    nav {
         position: fixed;
-        height: 100%;
-        overflow: auto;
         top: 0;
-        left: 0;
+        width: 100%;
     }
 
-    nav a {
-        display: block;
-        color: whitesmoke;
-        padding: 16px 18px;
-        text-decoration: none;
-        text-align: center;
+    .separator {
+        margin-top: 10vh;
     }
 
-    .active {
-        background-color: #f44336;
-    }
-
-    nav a:hover:not(.active) {
-        background-color: black;
-        color: white;
-    } 
-}
-
-/*Media queries   600px < 899px*/
-@media screen and (min-width: 600px) and (max-width: 899px) {
     nav ul {
         list-style-type: none;
         margin: 0;
@@ -60,11 +36,12 @@
     }
     
     nav li a:hover:not(.active) {
-        background-color: #111;
+        background-color: lightgray;
+        color: black;
     }
     
     .active {
-        background-color: #f44336;
+        background-color: #6993b8;
     }
 
     nav li:last-child {
@@ -100,7 +77,7 @@
 
     .active 
     {
-        background-color: #f44336;
+        background-color: #6993b8;
     }
     nav li a:hover:not(.active) 
     {

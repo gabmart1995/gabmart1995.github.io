@@ -136,6 +136,12 @@
 	font-size: 13px;
 
 }
+
+.competencies ul {
+	margin: 0;
+	padding: 8px 30px;
+}
+
 .portafolio .user {
 	margin-left: 30vw;
 	margin-right: 30vw;

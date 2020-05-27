@@ -1,10 +1,6 @@
 //  canvas
 const canvas = document.getElementsByTagName('canvas');
 
-// -----------------------------------------------------  //
-
-// eifel
-
 function drawLine( color, xInit, xFinish, yInit, yFinish, pad  ) {
 	pad.beginPath();
 	pad.strokeStyle = color;

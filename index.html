@@ -4,14 +4,14 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>Gabriel Martínez</title>
-		 <link rel="stylesheet" href="./css/vendor/w3.css" type="text/css">
+		 <link rel="stylesheet" href="./css/vendor/w3.css">
 		 <link rel="stylesheet" href="./css/index.css">
-     <link rel="stylesheet" href="./css/fontawesome.min.css" type="text/css">
+     <link rel="stylesheet" href="./css/fontawesome.min.css">
      <link rel="stylesheet" href="./css/navbar.css">
      <link rel="icon" href="./img/firma.png" type="image/png">
 	</head>
 	<body>
-    <nav>
+    <nav class="d-sm-block"> <!-- navbar only sm-lg -->
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
@@ -21,7 +21,26 @@
             <li class="right"><a href="#contacto" class="active">Contactáme</a></li>
         </ul>
     </nav>
-
+    <!-- end navbar -->
+    <nav class="d-xs-block"> <!-- navbar only xs -->
+        <ul>
+            <li>
+              <div class="flex-between">
+                <p class="nav-brand">Gabriel Martínez</p>
+                <button class="w3-button w3-black" onclick="showList()">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+            </li>
+            <li class="list"><a href="#home">Inicio</a></li>
+            <li class="list"><a href="#services">Servicios</a></li>
+            <li class="list"><a href="#news">Acerca de mí</a></li>
+            <li class="list"><a href="#ability">Habilidades</a></li>
+            <li class="list"><a href="#port">Portafolio</a></li>
+            <li class="right list"><a href="#contacto" class="active">Contactáme</a></li>
+        </ul>
+    </nav>
+    <!-- end navbar xs -->
 		<header class="w3-container w3-theme-d5 separator" id="home">
 		 <hgroup class="w3-padding-24 w3-center">
 	     <h2 class="title">Bienvenido a mi sitio personal soy:</h2>
@@ -335,6 +354,7 @@
         <span><b>Gabriel Martínez &copy; 2019</b></span>
     </footer>
 
+    <script src="./js/index.js"></script>
     <script src="./js/canvas.js"></script>
     <script src="./js/todo.js"></script>
     <script src="./js/fetch.js"></script>

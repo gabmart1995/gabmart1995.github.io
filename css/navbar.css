@@ -1,9 +1,14 @@
 @media screen and (min-width: 600px) {
 
-    nav {
+    .d-sm-block {
         position: fixed;
         top: 0;
         width: 100%;
+        display: block;
+    }
+
+    .d-xs-block {
+        display: none;
     }
 
     .separator {
@@ -52,6 +57,18 @@
 /*Media queries   600px < 899px*/
 @media screen and (min-height: 350px) and (max-width: 599px) 
 {
+
+    .d-sm-block {
+        display: none;
+    }
+
+    .d-xs-block {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
     nav ul 
     {
         list-style-type: none;
@@ -117,5 +134,16 @@
 
     .ajuste {
         margin-top: 4vh;
+    }
+
+    .flex-between {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-brand {
+        color: white;
+        margin-left: 5vw;
     }
 }

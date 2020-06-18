@@ -9,13 +9,18 @@
      <link rel="stylesheet" href="./css/fontawesome.min.css">
      <link rel="stylesheet" href="./css/navbar.css">
      <link rel="icon" href="./img/firma.png" type="image/png">
+
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
 	</head>
 	<body>
     <nav class="d-sm-block"> <!-- navbar only sm-lg -->
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
-            <li><a href="#news">Acerca de mí</a></li>
             <li><a href="#ability">Habilidades</a></li>
             <li><a href="#port">Portafolio</a></li>
             <li class="right"><a href="#contacto" class="active">Contactáme</a></li>
@@ -34,7 +39,6 @@
             </li>
             <li class="list"><a href="#home">Inicio</a></li>
             <li class="list"><a href="#services">Servicios</a></li>
-            <li class="list"><a href="#news">Acerca de mí</a></li>
             <li class="list"><a href="#ability">Habilidades</a></li>
             <li class="list"><a href="#port">Portafolio</a></li>
             <li class="right list"><a href="#contacto" class="active">Contactáme</a></li>
@@ -107,67 +111,31 @@
 			
 		</section>
 
-		<section class="competencies w3-theme-d5" id="news">
-			<div class="w3-row">
-				<div class="w3-col s12">
-					
-					<h3 class="w3-center">Competencias Profesionales</h3>
-					
-					<div class="w3-card card">
-						<div class="w3-row">
-							<div class="w3-col s12 m3">
-								<img src="./img/imagen.jpg" alt="" class="w-100 img">
-							</div>
-							<div class="w3-col s12 m9">
-								<ul>
-								 <li class="pb-2">
-                    <strong>Desarrollar aplicaciones informáticas:</strong> basado en los principios de la ingeniería de software y seguridad de la información.
-                </li>
-                <li class="pb-2">
-                    <strong>Aplicar estándares:</strong> calidad, usabilidad y accesibilidad en el desarrollo de aplicaciones informáticas.
-                </li>
-                <li class="pb-2">
-                    <strong>Interpretar los modelos de datos:</strong> con fines comunitarios y empresariales.
-                </li>
-                <li class="pb-2">
-                    <strong>Elaborar o mejorar</strong> la documentación técnica de una aplicación informática aplicada en su organización.
-                </li>
-                <li class="pb-2">
-                    <strong>Diseñar y mantener operativas:</strong> base de datos relacionales y NoSQL.
-                </li>
-                <li>
-                    Participar activamente en el proceso de evaluación, selección, instalación y distribución de software.
-                </li>
-							</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-    </section>
     <section class="ability w3-theme-l5" id="ability">
       <div class="w3-row w3-center">
         <h3>Habilidades</h3>
       </div>
       <div class="w3-row">
         <div class="w3-col  s12 m4">
-          <h5 class="w3-center subtitle">Desarrollo web</h5>
+          <h5 class="w3-center subtitle">Manejo de Desarrollo web</h5>
           <p class="text-justify">
             En la parte de la programación web me centro en el desarrollo de los principales 
-            en lenguajes de programación que solicitan en el mercado.
+            en lenguajes de programación que solicitan en el mercado. Respetando los principios
+            de accesibilidad a usuarios y seguridad de la información. 
           </p>
 
         </div>
         <div class="w3-col  s12 m4">
-          <h5 class="w3-center subtitle">Desarrollo de aplicaciones</h5>
+          <h5 class="w3-center subtitle">Manejo de Desarrollo de aplicaciones</h5>
           <p class="text-justify">
-            En el desarrollo de aplicaciones me concentro en las tecnologías de desarrollo en diversas plataformas.
+            En el desarrollo de aplicaciones me concentro y apuntó a las diversas plataformas de 
+            escritorio y móvil. Para cumplir tus objetivos organizacionales y llegar a la gente.
           </p>
         </div>
         <div class="w3-col  s12 m4">
-          <h5 class="w3-center subtitle">Frameworks y Librerías</h5>
+          <h5 class="w3-center subtitle">Manejo de Frameworks y Librerías</h5>
           <p class="text-justify">
-            En el mundo actual, la creación de las aplicaciones se realiza a una velocidad muy rápida, existen tecnologías que aceleran el proceso de diseño y desarrollo.
+            En el mundo actual, la creación de las aplicaciones se realiza a una velocidad muy rápida, existen tecnologías que aceleran el proceso de diseño y desarrollo. Para ello estudia cuales son las 
           </p>
         </div>
       </div>
@@ -289,8 +257,7 @@
         <p class="justify">
         ¿Quieres obtener recursos y utilizarlos en tus aplicaciones? Existen
         APIRestful que permiten consultas y consumos de servicios digitales.
-        Haciendo un modelo de negocio atractivo para inversionistas, debido a que es uno de 
-        los mejores negocios de la actualidad, junto a telecomunicaciones y seguridad informática.
+        Siempre con el objetivo de mejorar el modelo y la productividad de tu negocio.
         Mira este ejemplo, pulsa el botón para generar un usuario aleatorio.
         </p>
       </div>
@@ -305,7 +272,7 @@
       </div>
 
       <div class="w3-row">
-        <div class="w3.col s12">
+        <div class="w3-col s12">
           <div class="w-100" id="content-api"></div>
         </div>
       </div>
@@ -324,6 +291,42 @@
           por permitir realizar la demostracion
         </p>
       </div>
+
+      <div class="w3-row">
+        <div class="w3-col s12">
+          <h5 class="w3-center">Integración de servicios</h5>
+          <p class="justify w3-margin-bottom">
+            Buscas la mejor forma de mostrar datos a tus clientes, como desarrollador puedo mejorar el aspecto 
+            visual de tu información, al momento de mostrarla al cliente. Mira este ejemplo.
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row">
+        <div class="w3-col s12 m4">
+          <div class="flex-row">
+            <canvas height="400" width="400"></canvas>
+          </div>
+        </div>
+        <div class="w3-col s12 m4">
+          <div class="flex-row">
+            <canvas height="400" width="400"></canvas>
+          </div>
+        </div>
+        <div class="w3-col s12 m4">
+          <div class="flex-row">
+            <canvas height="400" width="400"></canvas>
+          </div>
+        </div>
+
+        <div class="w3-col s12">
+          <h6>Lecciones aprendidas:</h4>
+          <ul>
+            <li>Lectura de datos para generar reportes especializados de cualquier tipo</li>
+            <li>Manejo de diversas librerias y frameworks dependiendo de la necesidad de la organización</li>
+          </ul>
+        </div>
+      </div>
       
     </section>
     <section class="ability">
@@ -332,9 +335,10 @@
               <hgroup class="w3-center">
                   <h2>Contáctame</h2>                         
               </hgroup>
+              <h3 class="w3-center">¿Listo para llevar tu negocio al siguiente nivel?</h3>
               <p class="w3-center w3-margin-bottom">
-                  Para solicitar servicios puedes contáctarme por correo electronico: <br> 
-                   gabmart1995@gmail.com o usando las redes sociales.
+                Para solicitar servicios puedes contáctarme por correo electronico: <br> 
+                gabmart1995@gmail.com o usando las redes sociales.
                </p> 
               <div class="contenedor flex-around w3-margin-bottom">
                  <a href="https://github.com/gabmart1995" target="_blank">

@@ -27,10 +27,14 @@
 .w3-hover-border-theme:hover {border-color:#2e4a62 !important}
 
 
+html {
+	scroll-behavior: smooth;	
+}
+
 * {
 	font-family: "arial";
 	font-size: 14px;
-	scroll-behavior: smooth;
+	/*scroll-behavior: smooth;*/
 }
 
 .services {

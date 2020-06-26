@@ -95,8 +95,6 @@ const chart1 = canvas[1];
 const chart2 = canvas[2];
 const chart3 = canvas[3];
 
-console.log( canvas );
-
 const context = eifel.getContext('2d');
 
 const lines = 30;

@@ -57,7 +57,7 @@ html {
 }
 
 .img {
-	max-width: 300px;
+	max-width: 80%;
 }
 
 .flex-row {
@@ -185,3 +185,9 @@ footer {
 	}
 }
 
+
+.competences {
+	text-align: justify;
+	margin: 3vw;
+	padding-left: 20px;
+}

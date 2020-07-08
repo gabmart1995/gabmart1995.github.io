@@ -64,9 +64,7 @@ function createTodo( $event ) {
     new Todo( formulario.get('name'), formulario.get('description') ) 
   );
 
-  form['name'].value = '';
-  form['description'].value = '';
-
+  form.reset();
   showTable();
 
   $event.preventDefault();

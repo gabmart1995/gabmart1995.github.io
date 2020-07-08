@@ -38,6 +38,7 @@
         text-align: center;
         padding: 20px 22px;
         text-decoration: none;
+        transition: background-color 0.3s;
     }
     
     nav li a:hover:not(.active) {
@@ -96,10 +97,10 @@
         text-decoration: none;
     }
 
-    .active 
-    {
+    .active {
         background-color: #6993b8;
     }
+    
     nav li a:hover:not(.active) 
     {
         background-color: #111;

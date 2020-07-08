@@ -28,13 +28,12 @@
 
 
 html {
-	scroll-behavior: smooth;	
+	scroll-behavior: smooth;
 }
 
 * {
 	font-family: "arial";
 	font-size: 14px;
-	/*scroll-behavior: smooth;*/
 }
 
 .services {
@@ -185,9 +184,12 @@ footer {
 	}
 }
 
-
 .competences {
 	text-align: justify;
 	margin: 3vw;
 	padding-left: 20px;
+}
+
+.w3-button {
+	transition: background 0.5s;
 }

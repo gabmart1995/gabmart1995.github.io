@@ -61,7 +61,7 @@
 }
 
 /*Media queries   600px < 899px*/
-@media screen and (min-height: 350px) and (max-width: 599px) 
+@media screen and (min-width: 300px) and (max-width: 599px) 
 {
 
     .separator {

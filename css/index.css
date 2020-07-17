@@ -1,7 +1,7 @@
-/* @font-face {
-	font-family: "arial";
-	src: url('./fonts/Natalisa.otf');
-}*/ 
+@font-face {
+	font-family: "Times";
+	src: url('./fonts/Hathem Bosteem.ttf');
+} 
 
 .w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
@@ -31,9 +31,18 @@ html {
 	scroll-behavior: smooth;
 }
 
+.header-color {
+	background: rgb(0,0,0);
+	background: linear-gradient(328deg, rgba(0,0,0,1) 0%, rgba(23,37,49,1) 43%, rgba(105,147,184,1) 100%);
+}
+
 * {
 	font-family: "arial";
 	font-size: 14px;
+}
+
+.font-special {
+	font-family: "Times";	
 }
 
 .services {

@@ -1,5 +1,3 @@
-document.addEventListener( 'DOMContentLoaded', showList );
-
 function showList() {
     
   const nodes = document.getElementsByClassName('list');
@@ -19,3 +17,8 @@ function showList() {
     }
   }
 }
+
+document.addEventListener( 'DOMContentLoaded', showList );
+
+const year = document.getElementById('year');
+year.innerText = new Date().getFullYear();

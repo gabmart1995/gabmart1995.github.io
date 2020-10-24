@@ -202,3 +202,8 @@ footer {
 .w3-button {
 	transition: background 0.5s;
 }
+
+.name {
+	font-style: italic;
+	font-size: 15px;
+}

@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Times";
 	src: url('./fonts/Hathem Bosteem.ttf');
-} 
+}
 
 .w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
 .w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
@@ -42,7 +42,7 @@ html {
 }
 
 .font-special {
-	font-family: "Times";	
+	font-family: "Times";
 }
 
 .services {
@@ -112,9 +112,9 @@ html {
 }
 
 .portafolio {
-	background-color: #17202a;
+	background-color: #212121;
 	color: white;
-	padding: 15px 30px 15px 30px; 
+	padding: 15px 30px 15px 30px;
 }
 
 .subtitle {

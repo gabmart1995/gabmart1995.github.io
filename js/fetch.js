@@ -7,8 +7,8 @@ function getResource() {
   setTimeout(() => {
 
     fetch('https://randomuser.me/api/')
-      .then( async resp  => {
-        
+      .then( resp  => {
+
         resp.json().then(
           ({ results }) => {
             let data = {
@@ -19,18 +19,18 @@ function getResource() {
             };
 
             showLoading( false );
-    
+
             content.innerHTML = showTemplate( data );
           }
         ).catch( error => console.error( error ) );
-        
+
       })
       .catch( error => {
-        
-        console.error('comprueba tu conexion a internet') 
-        
+
+        console.error('comprueba tu conexion a internet')
+
         showLoading( false );
-        
+
         content.innerHTML = (`
           <div class="flex-row">
             <p class="w3-red">comprueba tu conexion a internet</p>
@@ -43,7 +43,7 @@ function getResource() {
 }
 
 function showTemplate({ name, image, email, age }) {
-  
+
   return (`
     <div class="w3-center w3-margin-top">
       <img class="w3-circle" src="${ image }" alt="user" />
@@ -67,6 +67,6 @@ function showLoading( loading =  true ) {
       </div>
     `);
   }
-    
+
   return content.innerHTML = null;
 }

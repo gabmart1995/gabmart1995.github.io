@@ -220,3 +220,27 @@ footer {
 	margin-left: 3vw;
 	margin-right: 3vw;
 }
+
+.img-foto {
+	height: auto;
+	width: auto;
+	border-radius: 5px;
+	max-height: 400px;
+}
+
+.d-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-content-center {
+	align-items: center;
+}
+
+.align-self-center {
+	align-self: center;
+}

@@ -244,3 +244,7 @@ footer {
 .align-self-center {
 	align-self: center;
 }
+
+.text-d-none {
+	text-decoration: none;
+}

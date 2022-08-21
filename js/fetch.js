@@ -7,23 +7,18 @@ function getResource() {
   setTimeout(() => {
 
     fetch('https://randomuser.me/api/')
-      .then( resp  => {
+      .then( resp => resp.json() )
+      .then(({ results }) => {
+        let data = {
+          name: `${ results[0].name.first } ${ results[0].name.last }`,
+          age: results[0].dob.age,
+          image: results[0].picture.medium,
+          email: results[0].email
+        };
 
-        resp.json().then(
-          ({ results }) => {
-            let data = {
-              name: `${ results[0].name.first } ${ results[0].name.last }`,
-              age: results[0].dob.age,
-              image: results[0].picture.medium,
-              email: results[0].email
-            };
+        showLoading( false );
 
-            showLoading( false );
-
-            content.innerHTML = showTemplate( data );
-          }
-        ).catch( error => console.error( error ) );
-
+        content.innerHTML = showTemplate( data );
       })
       .catch( error => {
 
@@ -39,7 +34,7 @@ function getResource() {
 
       });
 
-  }, 2000 );
+  }, 1500 );
 }
 
 function showTemplate({ name, image, email, age }) {
@@ -62,7 +57,7 @@ function showLoading( loading =  true ) {
 
   if ( loading ) {
     return content.innerHTML = (`
-      <div style="width: 100%; margin-top: 40px" class="flex-row">
+      <div style="width: 100%; margin-top: 40px" class="d-flex flex-row justify-content-center">
         <i class="fa-2x fas fa-circle-notch fa-spin"></i>
       </div>
     `);

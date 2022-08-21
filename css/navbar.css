@@ -1,4 +1,4 @@
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 992px) {
 
     .d-sm-block {
         position: fixed;
@@ -61,7 +61,7 @@
 }
 
 /*Media queries   600px < 899px*/
-@media screen and (min-width: 300px) and (max-width: 640px)
+@media screen and (min-width: 300px) and (max-width: 992px)
 {
 
     .separator {
@@ -112,12 +112,6 @@
         background-color: #111;
     }
 
-    .text-justify {
-        text-align: justify;
-        margin-left: 6vw;
-        margin-right: 6vw;
-    }
-
     .portafolio .user {
         margin: 0;
         border-radius: 10px;
@@ -166,14 +160,7 @@
     }
 }
 
-@media screen and ( max-width: 768px ) {
-  .d-flex {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-  }
-
+@media screen and ( max-width: 992px ) {
   .img-foto {
     height: 250px;
     width: 300px;
@@ -183,7 +170,6 @@
 }
 
 @media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
-
   .img-foto {
     height: 400px;
     width: 420px;

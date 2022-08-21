@@ -1,21 +1,59 @@
 /* import google-fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');*/
 
 *:not(code) {
     font-family: 'Roboto', sans-serif;
 }
 
+/* typhografy */
 @font-face {
 	font-family: "Bosteem";
-	src: url('./fonts/Hathem Bosteem.ttf');
+	src: url('./fonts/Hathem Bosteem/Hathem Bosteem.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url('./fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
 :root {
     --background-1: #e8f4ff;
-    --background-2: #000;
+    --background-2: #172531;
+    --gradient: linear-gradient(328deg, rgba(0,0,0,1) 0%, rgba(23,37,49,1) 43%, rgba(105,147,184,1) 100%);
+    --nav-background: #212121;
 }
 
-.w3-theme-d5 {color:#fff !important; background-color:#172531 !important}
+html {
+	scroll-behavior: smooth;
+}
+
+.w3-theme-d5 {
+    color:#fff !important; 
+    background-color:#172531 !important
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
 
 section {
     padding: 25px 100px;
@@ -27,6 +65,21 @@ section {
     }
 }
 
+/* header */
+.header-color {
+	background: rgb(0,0,0);
+	background: var(--gradient);
+}
+
+.header-color .font-special {
+    font-family: 'Bosteem', sans-serif;
+}
+
+.header-color h3 {
+    font-weight: normal;
+}
+
+/* intro */
 #intro {
     background-color: var(--background-1); 
 }
@@ -38,7 +91,7 @@ section {
     gap: 0 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #intro .grid-about {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
@@ -55,7 +108,7 @@ section {
     padding-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #services .grid-services {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
@@ -93,7 +146,7 @@ section {
     gap: 0 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #ability .grid-ability {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
@@ -118,7 +171,7 @@ section {
     gap: 30px 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #port .grid-port {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
@@ -142,12 +195,28 @@ section {
 #demo .grid-table {
     display: grid;
     grid-template-rows: auto;
+    grid-template-columns: 66.6% 1fr;
+    gap: 0 60px;
+}
+
+@media (max-width: 992px) {
+    #demo .grid-table {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 25px 0;
+        padding-bottom: 15px;
+    }
+}
+
+#demo .grid-api {
+    display: grid;
+    grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 60px;
 }
 
-@media (max-width: 768px) {
-    #demo .grid-table {
+@media (max-width: 992px) {
+    #demo .grid-api {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
         gap: 25px 0;
@@ -179,6 +248,35 @@ section {
 	padding-bottom: 20px;
 }
 
+#demo .grid-canvas {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    gap: 0 60px;
+}
+
+@media ( max-width: 992px ) {
+    #demo .grid-canvas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 20px 0;
+    }
+}
+
+/* limite maximo de crecimiento */
+#demo .grid-canvas canvas {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+/* footer */
+footer {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+    background-color: var(--nav-background);
+    color: white;
+}
+
 
 
 /* utilities */
@@ -199,6 +297,10 @@ section {
     justify-content: center;
 }
 
+.justify-content-around {
+    justify-content: space-around;
+}
+
 .flex-row {
     flex-direction: row;
 }
@@ -211,8 +313,20 @@ section {
     align-items: center;
 }
 
+.font-weight-bold {
+    font-weight: bold;
+}
+
 .mr-2 {
 	margin-right: 1rem;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
 }
 
 

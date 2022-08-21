@@ -7,19 +7,19 @@
 		 <link rel="stylesheet" href="./css/vendor/w3.css">
 		 <link rel="stylesheet" href="./css/index.css">     
      <link rel="stylesheet" href="./css/fontawesome.min.css">
-     <!-- <link rel="stylesheet" href="./css/navbar.css"> -->
+     <link rel="stylesheet" href="./css/navbar.css">
      <link rel="icon" href="./img/firma.ico" type="image/ico">
+     <link rel="stylesheet" href="./css/fontawesome.min.css" />
 
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-     <script src="https://kit.fontawesome.com/a8e23f8d34.js" crossorigin="anonymous"></script>
 
 	</head>
 	<body>
     <!-- navbar only sm-lg -->
-    <!--<nav class="d-sm-block"> 
+    <nav class="d-sm-block"> 
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
@@ -31,31 +31,32 @@
     </nav> -->
     <!-- end navbar -->
     <!-- navbar only xs -->
-    <!-- <nav class="d-xs-block"> 
+    <nav class="d-xs-block"> 
         <ul>
             <li>
               <div class="flex-between">
                 <p class="nav-brand">Gabriel Martínez</p>
-                <button class="w3-button w3-black" onclick="showList()">
+                <button class="w3-button w3-black" id="responsive-button">
                   <i class="fas fa-bars"></i>
                 </button>
               </div>
             </li>
-            <li class="list"><a href="#home">Inicio</a></li>
-            <li class="list"><a href="#services">Servicios</a></li>
-            <li class="list"><a href="#ability">Habilidades</a></li>
-						<li class="list"><a href="#port">Portafolio</a></li>
-						<li class="list"><a href="#demo">Demostraciones</a> </li>
-            <li class="right list"><a href="#contacto" class="active">Contactáme</a></li>
+            <li class="list d-none"><a href="#home">Inicio</a></li>
+            <li class="list d-none"><a href="#services">Servicios</a></li>
+            <li class="list d-none"><a href="#ability">Habilidades</a></li>
+						<li class="list d-none"><a href="#port">Portafolio</a></li>
+						<li class="list d-none"><a href="#demo">Demostraciones</a> </li>
+            <li class="right list d-none"><a href="#contacto" class="active">Contactáme</a></li>
         </ul>
-    </nav>-->
+    </nav>
     <!-- end navbar xs -->
-		<!-- <header class="w3-container w3-theme-d5 separator header-color" id="home">
+		<header class="w3-container w3-theme-d5 separator header-color" id="home">
 		 <hgroup class="w3-padding-24 w3-center">
 	     <h3 class="title">Bienvenido a mi sitio personal soy:</h3>
 	     <h1 class="title font-special">Gabriel Martinez</h1>
 	  	</hgroup>
-		</header> -->
+		</header>
+
     <section id="intro">
       <div class="grid-about">
         <p class="text-justify">
@@ -87,7 +88,7 @@
           </ul>
         </div>
         <div>
-          <img src="./img/Todojunto.png" alt="" class="w3-round img-fluid">
+          <img src="./img/compressed/Todojunto.png" alt="" class="w3-round img-fluid">
         </div>
         <div class="canvas-container">
           <canvas height="300" width="300"></canvas>
@@ -128,9 +129,8 @@
           </div>
           <h5 class="w3-center subtitle">Desarrollo de aplicaciones, usando plataformas web</h5>
           <p class="text-justify">
-            En el desarrollo de aplicaciones me concentro. Apuntó a las diversas plataformas de
-            escritorio y móvil con tecnologías web. Para cumplir los objetivos organizacionales 
-            llegando a la gente.
+            Apuntó a las diversas plataformas de escritorio y móvil con tecnologías web. 
+            Para cumplir los objetivos organizacionales llegando a la gente.
           </p>
         </div>
         <div>
@@ -150,7 +150,7 @@
       <h3 class="w3-center pt-3">Portafolio Personal</h3>
       <div class="grid-port">
         <div class="d-flex justify-content-center align-items-center">
-          <img src="img/port/EA00/CollageEA.jpg" alt="eaudiophone" class="img-fluid" />
+          <img src="img/compressed/CollageEA.jpg" alt="eaudiophone" class="img-fluid" />
         </div>
         <div>
           <h4 class="w3-center">Estudios Audiophone S.A</h4>
@@ -187,10 +187,10 @@
 
 						<div class="row-avatar text-sm-center">
 							<a href="https://github.com/gabmart1995" target="_blank" class="text-d-none">
-								<img height="50" width="50" src="img/gabmart.jpeg" class="w3-circle mr-2" alt="gabmart" />
+								<img height="50" width="50" src="img/compressed/gabmart.jpeg" class="w3-circle mr-2" alt="gabmart" />
 							</a>
 							<a href="https://github.com/martalf" target="_blank" class="text-d-none">
-								<img height="50" width="50" src="img/martalf.jpeg" class="w3-circle" alt="martalf" />
+								<img height="50" width="50" src="img/compressed/martalf.jpeg" class="w3-circle" alt="martalf" />
 							</a>
 						</div>
 
@@ -231,20 +231,20 @@
 
 						<div class="row-avatar text-sm-center">
 							<a href="https://github.com/gabmart1995" class="text-d-none" target="_blank">
-								<img height="50" width="50" src="img/gabmart.jpeg" class="w3-circle mr-2" alt="gabmart" />
+								<img height="50" width="50" src="img/compressed/gabmart.jpeg" class="w3-circle mr-2" alt="gabmart" />
 							</a>
 							<a href="https://github.com/bran-bit-lab" target="_blank" class="text-d-none">
-								<img height="50" width="50" src="img/bran-bit.jpeg" class="w3-circle" alt="bran-bit" />
+								<img height="50" width="50" src="img/compressed/bran-bit.jpeg" class="w3-circle" alt="bran-bit" />
 							</a>
 						</div>
 					</article>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-          <img src="img/port/PR00/CollageT.jpg" alt="products-app" class="img-fluid" />
+          <img src="img/compressed/CollageT.jpg" alt="products-app" class="img-fluid" />
         </div> <!-- end second article -->
 
         <div class="d-flex justify-content-center align-items-center">
-					<img src="img/port/OPTM00/CollageP.jpg" alt="Optimmanage" class="img-fluid" />
+					<img src="img/compressed/CollageP.jpg" alt="Optimmanage" class="img-fluid" />
         </div>
         <div>
           <h4 class="w3-center">Optimmanage - Polpoo</h4>
@@ -293,7 +293,6 @@
       </div>
 
       <div class="grid-table">
-        
         <div>
           <table class="w3-table">
             <thead class="w3-black">
@@ -374,37 +373,39 @@
 
       <!-- portafolio 2 -->
       <div class="w3-row w3-padding-24">
-        <h5 class="w3-center">Conexion con API Rest: Generador de usuarios aleatorio</h5>
+        <h5 class="w3-center">Conexión con API Rest: Generador de usuarios aleatorio</h5>
         <p class="w3-center">
         ¿Quieres obtener recursos y utilizarlos en tus aplicaciones? <br> Existen
-        servicios Restful que permiten consultas y consumos de servicios digitales.
-        Siempre con el objetivo de mejorar el modelo y la productividad de tu negocio.
-        Mira este ejemplo, pulsa el botón para generar un usuario aleatorio.
+        servicios REST que permiten consultas y consumos de servicios digitales. 
         </p>
       </div>
 
-      <div class="w3-row">
-        <div class="w3-col s12 w3-center">
-          <button class="w3-button w3-blue" onclick="getResource()">
-            <i class="fas fa-user w3-margin-right"></i>
-            Generar usuario
-          </button>
-        </div>
-      </div>
+      <div class="grid-api">
+        <div>
+          <p class="font-weight-bold">Pulsa el botón para generar un usuario aleatorio</p>
+          <div class="d-flex justify-content-center flex-row">
+            <button class="w3-button w3-blue" onclick="getResource()">
+              <i class="fas fa-user w3-margin-right"></i>
+              Generar usuario
+            </button>
+          </div>
 
-      <div class="w3-row">
-        <div class="w3-col s12">
+        </div>
+        <div>
           <div class="w-100" id="content-api"></div>
         </div>
+
+      </div>
+      <div style="padding-top: 30px;">
+        <h6>Lecciones aprendidas:</h6>
+        <ul>
+          <li>Conocimiento adquirido en colaboración con diversos equipos de trabajo.</li>
+          <li>Manejo de recursos de servidores</li>
+          <li>Maquetacion de datos llegados del servidor</li>
+          <li>Construcción de servicios API Rest</li>
+        </ul>
       </div>
 
-      <h6>Lecciones aprendidas:</h6>
-      <ul>
-        <li>Conocimiento adquirido en colaboración con diversos equipos de trabajo.</li>
-        <li>Manejo de recursos de servidores</li>
-        <li>Maquetacion de datos llegados del servidor</li>
-        <li>Construcción de servicios API Rest</li>
-      </ul>
       <div>
         <p>
           Créditos a las personas de
@@ -423,32 +424,25 @@
         </div>
       </div>
 
-      <div class="w3-row">
-        <div class="w3-col s12 m4">
-          <div class="flex-row">
-            <canvas height="400" width="400"></canvas>
-          </div>
+      <div class="grid-canvas">
+        <div class="d-flex justify-content-center flex-row">
+          <canvas height="250" width="250"></canvas>
         </div>
-        <div class="w3-col s12 m4">
-          <div class="flex-row">
-            <canvas height="400" width="400"></canvas>
-          </div>
+        <div class="d-flex justify-content-center flex-row">
+          <canvas height="250" width="250"></canvas>
         </div>
-        <div class="w3-col s12 m4">
-          <div class="flex-row">
-            <canvas height="400" width="400"></canvas>
-          </div>
-        </div>
-
-        <div class="w3-col s12">
-          <h6>Lecciones aprendidas:</h6>
-          <ul>
-            <li>Lectura de datos para generar reportes especializados de cualquier tipo</li>
-            <li>Manejo de diversas librerias y frameworks dependiendo de la necesidad de la organización</li>
-          </ul>
+        <div class="d-flex justify-content-center flex-row">
+          <canvas height="250" width="250"></canvas>
         </div>
       </div>
 
+      <div div style="padding-top: 30px;">
+        <h6>Lecciones aprendidas:</h6>
+        <ul>
+          <li>Lectura de datos para generar reportes especializados de cualquier tipo</li>
+          <li>Manejo de diversas librerias y frameworks dependiendo de la necesidad de la organización</li>
+        </ul>
+      </div>
     </section>
     <section class="ability">
       <div id="contacto">
@@ -461,7 +455,7 @@
                 Para solicitar servicios puedes contáctarme por correo electronico: <br>
                 gabmart1995@gmail.com o usando las redes sociales.
                </p>
-              <div class="contenedor flex-around w3-margin-bottom">
+              <div class="d-flex flex-row justify-content-around w3-margin-bottom">
                  <a href="https://github.com/gabmart1995" target="_blank">
                      <i class="fab fa-github fa-3x"></i>
                  </a>

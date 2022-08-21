@@ -76,8 +76,8 @@ function completeTodo( todoId ) {
       
       if ( todo.id === todoId ) {
     
-        const totalTodo = document.getElementsByTagName('span');
-        addCompleted( totalTodo[0], !todo.completed );
+        const totalTodo = document.querySelector('#counter');
+        addCompleted( totalTodo, !todo.completed );
 
         todo.completed = !todo.completed;
       } 

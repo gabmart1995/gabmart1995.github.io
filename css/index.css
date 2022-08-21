@@ -270,7 +270,7 @@ section {
 }
 
 /* footer */
-footer {
+footer.footer-site {
 	padding-top: 3vh;
 	padding-bottom: 3vh;
     background-color: var(--nav-background);

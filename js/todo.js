@@ -24,7 +24,7 @@ function showTable() {
   
       todos.forEach( ( element, index ) => {
         
-        table.innerHTML += `
+        table.innerHTML += (`
           <tr>
             <td class="w3-center">${ index + 1 }</td>
             <td class="w3-center">${ element.name }</td>
@@ -44,7 +44,7 @@ function showTable() {
         
             </td>
           </tr>
-        `
+        `)
       });
   
     } 

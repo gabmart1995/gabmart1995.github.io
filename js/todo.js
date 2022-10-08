@@ -1,12 +1,3 @@
-// TODOS
-let todos = [];
-const form = document.forms['form-table'];
-const formModal = document.forms['form-modal'];
-const table = document.getElementById('tbody');
-  
-form.addEventListener( 'submit', createTodo );
-formModal.addEventListener( 'submit', editTodo );
-
 class Todo {  
   constructor( name, description ) {
     this.name = name || '';
@@ -47,7 +38,14 @@ function showTable() {
         `)
       });
   
-    } 
+    } else {
+
+      table.innerHTML += (`
+        <tr>
+          <td colspan="4" class="w3-center" style="color: red;">No existen registros</td>
+        </tr>
+      `);
+    }
   }
   
 function removeTodo( todoId ) {
@@ -128,5 +126,14 @@ function showModal( open, todo = null ) {
     modal.style.display = 'none';
   }
 }
+
+// TODOS
+let todos = [];
+const form = document.forms['form-table'];
+const formModal = document.forms['form-modal'];
+const table = document.getElementById('tbody');
+  
+form.addEventListener( 'submit', createTodo );
+formModal.addEventListener( 'submit', editTodo );
   
   

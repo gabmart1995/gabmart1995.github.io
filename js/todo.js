@@ -128,7 +128,10 @@ function showModal( open, todo = null ) {
 }
 
 // TODOS
-let todos = [];
+let todos = [
+  { id: 1, description: 'mi primera tarea', name: 'ejemplo 1' }, 
+  { id: 2, description: 'mi segunda tarea', name: 'ejemplo 2' }
+];
 const form = document.forms['form-table'];
 const formModal = document.forms['form-modal'];
 const table = document.getElementById('tbody');
@@ -136,4 +139,4 @@ const table = document.getElementById('tbody');
 form.addEventListener( 'submit', createTodo );
 formModal.addEventListener( 'submit', editTodo );
   
-  
+showTable();  

@@ -60,6 +60,11 @@
 	font-style: italic;
 }
 
+@font-face {
+	font-family: 'Bosteem';
+	src: url('fonts/Hathem Bosteem/Hathem Bosteem.ttf') format('truetype');
+}
+
 body {
 	background-color: var(--color-2);
 	margin: 0;
@@ -77,6 +82,19 @@ h1, h2, h3, h4, h5, h6, a {
 
 p, span, div {
 	font-family: 'Lora';
+}
+
+p {
+	font-size: 1.1rem;
+	line-height: 24px;
+}
+
+header, nav, main.background {
+	background-color: var(--base-color);
+}
+
+main.background {
+	max-width: 100% !important;
 }
 
 /** clases globales */
@@ -100,6 +118,10 @@ p, span, div {
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;
+}
+
+.signature {
+	font-family: 'Bosteem';
 }
 
 /* nav */
@@ -163,6 +185,7 @@ nav aside a.closebtn {
 	right: 15px;
 	font-size: 3rem;
 	padding: 0;
+	cursor: pointer;
 }
 
 nav aside figure {
@@ -182,10 +205,6 @@ nav aside figure figcaption {
 }
 
 /* header */
-header, nav {
-	background-color: var(--base-color);
-}
-
 header {
 	padding: 60px 0;
 }
@@ -225,6 +244,13 @@ header .wrapper > div:last-child {
 
 
 @media screen and (max-width: 576px) {
+	header .wrapper > div:last-child img {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 576px) {
 	header .wrapper > div:first-child {
 		order: 1;
 		margin-left: 15px;
@@ -234,10 +260,6 @@ header .wrapper > div:last-child {
 
 header .primary-button {
 	margin-top: 20px;
-}
-
-header p {
-	font-size: 1.1rem;
 }
 
 header .social-container {
@@ -251,3 +273,104 @@ header .social-container a {
 	font-size: 1.5rem;
 }
 
+/* main */
+main {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+main section {
+	padding: 40px 0;
+}
+
+/* seccion acerca */
+main section:first-child h2 {
+	font-size: 2rem;
+}
+
+main section:first-child .grid-about {
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+
+@media screen and (min-width: 577px) and (max-width: 830px) {
+	main section:first-child .grid-about {
+		grid-template-columns: 25% 75%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	main section:first-child .grid-about {
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, auto);
+	}
+}
+
+main section:first-child .grid-about > div:first-child {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	padding-top: 40px;
+}
+
+@media screen and (max-width: 576px) {	
+	main section:first-child .grid-about > div:first-child {
+		flex-direction: row;
+		align-items: end;
+		padding-top: 0;
+		justify-content: space-between;
+		margin-bottom: 20px;	
+	}
+}
+
+main section:first-child .grid-about > div:last-child {
+	border-left: 1px solid var(--color-8);
+}
+
+@media screen and (max-width: 576px) {	
+	main section:first-child .grid-about > div:last-child {
+		border-top: 1px solid var(--color-8);
+		border-left: none;		
+	}
+}
+
+main section:first-child .grid-about > div {
+	padding: 0 30px;
+}
+
+main section:first-child .title-about {
+	text-align: right;
+	margin-top: 10px;
+}
+
+main section:first-child .grid-about > div:first-child i {
+	font-size: 2rem;
+	display: block;
+	text-align: right;
+}
+
+main section:first-child .grid-about > div:first-child i.space {
+	margin-top: 20px;
+}
+
+
+main section:first-child .title-about span {
+	font-family: 'Montserrat';
+	font-size: 2rem;
+}
+
+/** seccion servicios */
+main #services {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+main #services .grid-services {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+}
+
+main #services .grid-services .card {
+	border-radius: 20px;
+}

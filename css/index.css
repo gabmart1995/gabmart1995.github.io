@@ -124,6 +124,10 @@ main.background {
 	font-family: 'Bosteem';
 }
 
+.img-fluid {
+	width: 100%;
+}
+
 /* nav */
 nav .wrapper {
 	max-width: 1080px;
@@ -408,4 +412,86 @@ main #services .grid-services .card:hover h4 {
 
 main #services .grid-services .card p {
 	font-size: 1rem;
+}
+
+/** seccion portafolio */
+main #proyects .timeline {
+	position: relative;
+	margin: 0 auto;
+}
+
+main #proyects .timeline::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	background-color: var(--color-8);
+	top: 0;
+  	bottom: 0;
+  	left: 50%;
+  	/*margin-left: -3px;*/
+}
+
+main #proyects .container {
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+main #proyects .container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -12px;
+	background-color: var(--color-3);
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+	transition: all 0.3s;
+}
+
+main #proyects .container:hover::after {
+	background-color: var(--color-5);
+}
+
+main #proyects .content {
+	margin: 0 34px;
+}
+
+main #proyects .left {
+	left: 0;
+}
+
+main #proyects .left h2 {
+	text-align: right;
+}
+
+main #proyects .right {
+	left: 50%;
+}
+
+/* corrige el punto en el tiempo */
+main #proyects .right::after {
+	left: -12px;
+}
+
+main #proyects h5 {
+	font-size: 1.5rem;
+}
+
+main #proyects a {
+	text-decoration: none;
+}
+
+main #proyects .stack > span a i {
+	transition: all 0.3s;
+}
+
+main #proyects .stack > span a:hover i {
+	color: var(--color-3);
+}
+
+main #proyects .team img {
+	height: 50px;
+	width: 50px;
 }

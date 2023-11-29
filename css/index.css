@@ -369,8 +369,43 @@ main #services .grid-services {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, auto);
+	gap: 20px;
+}
+
+@media screen and (max-width: 576px) {
+	main #services .grid-services {
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(6, auto);
+	}
+}
+
+@media screen and (min-width: 577px) and (max-width: 830px) {
+	main #services .grid-services {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
 }
 
 main #services .grid-services .card {
-	border-radius: 20px;
+	border-radius: 5px;
+	background: var(--color-2);
+	padding: 30px 25px;
+}
+
+main #services .grid-services .card i {
+	font-size: 2rem;
+	transition: all 0.3s;
+}
+
+main #services .grid-services .card h4 {
+	transition: all 0.3s;
+}
+
+main #services .grid-services .card:hover i,
+main #services .grid-services .card:hover h4 {
+	color: var(--color-3);
+}
+
+main #services .grid-services .card p {
+	font-size: 1rem;
 }

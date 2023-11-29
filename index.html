@@ -11,15 +11,29 @@
 <body>
     <nav>
         <div class="wrapper">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" id="menu"></i>
             <i class="fas fa-cog"></i>
         </div>
+        <aside class="sidenav" id="sidenav">
+            <a href="#" class="closebtn" id="sidenav-close-button">&times;</a>
+            <figure>
+                <img src="img/gabmart.jpeg" class="avatar" />
+                <figcaption>
+                    Gabriel Martínez <br />
+                    Programador
+                </figcaption>
+            </figure>
+            <a href="#">Acerca</a>
+            <a href="#">Servicios</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </aside>
     </nav>
     <header>
         <div class="wrapper">
             <div>
                 <h1>
-                    Hola, soy Gabriel Martinez. <br/> 
+                    Hola, soy Gabriel Martínez. <br/> 
                     Desarrollador de aplicaciones
                 </h1>
                 <p>
@@ -28,11 +42,23 @@
                     He sido líder y colaborador en varios proyectos a nivel de desarrollo FrontEnd y apoyo en desarrollo FullStack.
                 </p>
                 <a href="#" class="primary-button">Ver mi experiencia</a>
+                <div class="social-container">
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="https://placehold.co/400" alt="img-dummy" />
             </div>
         </div>
    </header>
+   <script src="js/index.js"></script>
 </body>
 </html>

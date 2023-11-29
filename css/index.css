@@ -66,6 +66,7 @@ body {
 	padding: 0;
 }
 
+
 * {
 	color: var(--title-color);
 }
@@ -95,6 +96,12 @@ p, span, div {
 	background-color: var(--color-5);
 }
 
+.avatar {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
 /* nav */
 nav .wrapper {
 	max-width: 1080px;
@@ -104,8 +111,74 @@ nav .wrapper {
 	padding: 20px 0; 
 }
 
+@media screen and (max-width: 830px) {
+	nav .wrapper {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
 nav i {
 	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/* barra lateral **/
+nav aside {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: var(--color-7);
+	overflow-x: hidden;
+	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav aside a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 0;
+	font-size: 1.2rem;
+	transition: all 0.3s;
+}
+
+nav aside a:not(.closebtn):hover {
+	background-color: var(--color-5);
+	color: var(--title-color);
+}
+
+nav aside a:not(.closebtn) {
+	width: 100%;
+}
+
+nav aside a.closebtn {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	font-size: 3rem;
+	padding: 0;
+}
+
+nav aside figure {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav aside figure figcaption {
+	margin-top: 20px;
+	font-size: 0.8rem;
+	font-style: italic;
+	text-align: center;
+	line-height: 20px;
 }
 
 /* header */
@@ -117,17 +190,46 @@ header {
 	padding: 60px 0;
 }
 
+@media screen and (max-width: 576px) {
+	header {
+		padding-top: 0; 
+	}	
+}
+
 
 header .wrapper {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	max-width: 1080px;
+	max-width: 80%;
 	margin: 0 auto; 
+}
+
+@media screen and (max-width: 576px) {
+	header .wrapper {
+		display: flex;
+		flex-wrap: wrap; 
+	}	
 }
 
 header .wrapper > div:last-child {
 	display: flex;
 	justify-content: flex-end;
+}
+
+@media screen and (min-width: 577px) and (max-width: 830px) {
+	header .wrapper > div:last-child img {
+		max-height: 250px;
+		max-width: 250px;
+	}
+}
+
+
+@media screen and (max-width: 576px) {
+	header .wrapper > div:first-child {
+		order: 1;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
 
 header .primary-button {
@@ -136,5 +238,16 @@ header .primary-button {
 
 header p {
 	font-size: 1.1rem;
+}
+
+header .social-container {
+	margin-top: 10px;
+}
+
+header .social-container a {
+	margin-right: 5px;
+	color: var(--title-color);
+	text-decoration: none;
+	font-size: 1.5rem;
 }
 

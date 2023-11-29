@@ -1,25 +1,24 @@
-document.addEventListener( 'DOMContentLoaded', () => {
-  
-  const button = document.querySelector('#responsive-button');
-  
-  const showList = function() {
+(() => {
+  const initSidebar = () => {
+    const menu = document.querySelector('#menu');
+    if (!menu) return;
+
+    const sidenav = document.querySelector('#sidenav');
+    if (!sidenav) return;
     
-    const nodes = document.getElementsByClassName('list');
+    const closeButtonSidenav = sidenav.querySelector('.closebtn');
+    if (!closeButtonSidenav) return;
     
-    for ( const node of nodes ) {
-      
-      if ( node.classList.contains('d-none')) {
-        node.classList.replace('d-none', 'd-block');
-        
-      } else {
-        node.classList.replace('d-block', 'd-none');
-        
-      }
-    }
+    // boton de apertura sidenav
+    menu.addEventListener('click', () => {
+      sidenav.style.width = '250px';
+    });
+
+    // boton de cierre sidenav
+    closeButtonSidenav.addEventListener('click', () => {
+      sidenav.style.width = '0';
+    });
   };
-  
-  button.addEventListener('click', showList );
-  
-  const year = document.getElementById('year');
-  year.innerText = new Date().getFullYear();
-});
+
+  initSidebar();
+})();

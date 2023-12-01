@@ -364,7 +364,8 @@ main section:first-child .title-about span {
 }
 
 /** seccion servicios */
-main #services {
+main #services,
+main #port {
 	max-width: 80%;
 	margin: 0 auto;
 }
@@ -494,4 +495,40 @@ main #proyects .stack > span a:hover i {
 main #proyects .team img {
 	height: 50px;
 	width: 50px;
+}
+
+/** seccion portafolio */
+main #port .grid-port {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+main #port .grid-port .card {
+	border-radius: 5px;
+	background: var(--color-2);
+	padding: 30px 25px;
+}
+
+main #port .grid-port .card img {
+	width: 100%;
+}
+
+main #port .grid-port .card i {
+	font-size: 2rem;
+	transition: all 0.3s;
+}
+
+main #port .grid-port .card h4 {
+	font-size: 1.1rem;
+}
+
+main #port .grid-port .card a:not(.primary-button) {
+	text-decoration: none;
+	font-family: 'Lora';
+	color: var(--color-3);
+}
+
+main #port .grid-port .card p {
+	font-size: 1rem;
 }

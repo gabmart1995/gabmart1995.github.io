@@ -65,6 +65,10 @@
 	src: url('fonts/Hathem Bosteem/Hathem Bosteem.ttf') format('truetype');
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--color-2);
 	margin: 0;
@@ -89,7 +93,7 @@ p {
 	line-height: 24px;
 }
 
-header, nav, main.background {
+header, nav, main.background, footer {
 	background-color: var(--base-color);
 }
 
@@ -157,7 +161,7 @@ nav aside {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: var(--color-7);
+	background-color: var(--color-2);
 	overflow-x: hidden;
 	transition: 0.5s;
 	display: flex;
@@ -270,7 +274,8 @@ header .social-container {
 	margin-top: 10px;
 }
 
-header .social-container a {
+header .social-container a,
+footer .social-container a {
 	margin-right: 5px;
 	color: var(--title-color);
 	text-decoration: none;
@@ -278,7 +283,8 @@ header .social-container a {
 }
 
 /* main */
-main {
+main,
+footer .wrapper {
 	max-width: 80%;
 	margin: 0 auto;
 }
@@ -600,4 +606,105 @@ main #port .grid-port .card a:not(.primary-button) {
 
 main #port .grid-port .card p {
 	font-size: 1rem;
+}
+
+main #contact .contact-grid {
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+
+@media screen and (max-width: 576px) {
+	main #contact .contact-grid {
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, auto);
+	}
+}
+
+main #contact .contact-grid > div {
+	padding: 0 30px;
+}
+
+main #contact .contact-grid > div:first-child {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+@media screen and (max-width: 576px) {
+	main #contact .contact-grid > div:first-child {
+		align-items: flex-start;
+	}	
+}
+
+main #contact .contact-grid > div:first-child div {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+	main #contact .contact-grid > div:first-child div {
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 577px) and (max-width: 830px) {
+	main #contact .contact-grid > div:last-child {
+		padding-right: 0;
+	}
+}
+
+
+main #contact .contact-grid > div:first-child h4 {
+	margin-top: 10px;
+}
+
+main #contact .contact-grid > div:first-child i {
+	font-size: 2rem;
+	transition: all 0.3s;
+}
+
+main #contact .contact-grid > div:first-child a {
+	color: var(--title-color);
+	text-decoration: none;
+}
+
+main #contact .contact-grid > div:first-child a:hover i {
+	color: var(--color-3);
+}
+
+main #contact .contact-grid > div:last-child {
+	border-left: 1px solid var(--color-8);
+}
+
+@media screen and (max-width: 576px) {
+	main #contact .contact-grid > div:last-child {
+		border-left: none;
+		border-top: 1px solid var(--color-8);
+	}
+}
+
+/* footer */
+footer {
+	padding: 20px 0;
+}
+
+footer .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+	footer .wrapper {
+		flex-direction: column;
+		justify-content: space-between;
+	}	
+}
+
+footer .social-container {
+	display: flex;
+	align-items: center;
+}
+
+footer .social-container a {
+	margin-right: 20px;
 }

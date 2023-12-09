@@ -141,6 +141,18 @@ nav .wrapper {
 	padding: 20px 0; 
 }
 
+nav .nav-item {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+nav .nav-item span {
+	margin-left: 15px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
 @media screen and (max-width: 830px) {
 	nav .wrapper {
 		margin-left: 20px;
@@ -560,7 +572,7 @@ main #port .grid-port {
 @media screen and (max-width: 576px) {
 	main #port .grid-port {
 		grid-template-columns: 100%;
-		grid-template-rows: repeat(6, auto);
+		grid-template-rows: repeat(3, auto);
 	}
 }
 
@@ -707,4 +719,10 @@ footer .social-container {
 
 footer .social-container a {
 	margin-right: 20px;
+}
+
+/** Mapa */
+#map {
+	height: 250px;
+	max-width: 100%;
 }

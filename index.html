@@ -7,11 +7,21 @@
     <title>Gabriel Martínez</title>
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/ />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 </head>
 <body>
     <nav>
         <div class="wrapper">
-            <i class="fas fa-bars" id="menu"></i>
+            <div class="nav-item" id="menu">
+                <i class="fas fa-bars"></i>
+                <span>Menú</span>
+            </div>
             <!-- <i class="fas fa-cog"></i> -->
         </div>
         <aside class="sidenav" id="sidenav">
@@ -42,18 +52,21 @@
                     para el ramo de comercio electrónico. <br /><br />
                     He sido líder y colaborador en varios proyectos a nivel de desarrollo FrontEnd y apoyo en desarrollo FullStack.
                 </p>
-                <a href="#" class="primary-button">Ver mi experiencia</a>
+                <p>
+                    <a href="/#services" class="primary-button">Ver servicios</a>
+                    <a href="/#proyects" class="primary-button">Ver mi experiencia</a>
+                </p>
                 <div class="social-container">
-                    <a href="#">
+                    <a href="https://github.com/gabmart1995" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://gitlab.com/gabmart1995" target="_blank">
                         <i class="fab fa-gitlab"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/gabmart1995/">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://gabmart1995.blogspot.com/">
+                    <a href="https://gabmart1995.blogspot.com/" target="_blank">
                         <i class="fab fa-blogger-b"></i>
                     </a>
                 </div>
@@ -123,7 +136,7 @@
                     <h4>Desarrollo de Aplicaciones</h4>
                     <p> 
                         Incluyo dentro de mis servicios la oportunidad de desarrollar soluciones tecnológicas 
-                        para diferentes dispositivos. (Escritorio y Web)
+                        para diferentes dispositivos.
                     </p>
                 </div>
                 <div class="card">
@@ -139,13 +152,13 @@
                     <h4>Integración PWA</h4>
                     <p> 
                         La Integración PWA incluye la mejora de un sitio web ya
-                        existente añadiendo funcionalidades nativas para funcionar sin conexión 
-                        a Internet e instalación en tu dispositivo. 
+                        existente añadiendo funcionalidades nativas e 
+                        instalándose en tu dispositivo. 
                     </p>
                 </div>
                 <div class="card">
                     <i class="fas fa-rocket"></i>
-                    <h4>Integración de servicios externos</h4>
+                    <h4>Integración de servicios externos (API)</h4>
                     <p> 
                         La integración de servicios incluye que tu sitio o aplicación se conecte a
                         un servicio en la nube en particular.
@@ -217,7 +230,7 @@
                             <p class="stack">
                                 <strong>Stack utilizado:</strong> <br /><br/>
                                 <span>
-                                    <a href="https://es.react.dev/" target="_blank" style="margin-right: 10px; margin-left: 10px;">
+                                    <a href="https://angular.io/" target="_blank" style="margin-right: 10px; margin-left: 10px;">
                                         <i class="fab fa-angular fa-2x"></i>
                                     </a>
                                     <a href="https://laravel.com" target="_blank">
@@ -284,7 +297,7 @@
    </main>
    <main class="background">
         <section id="port">
-            <h2>Proyectos personales</h2>
+            <h2>Algunos de mis proyectos personales</h2>
             <div class="grid-port">
                 <div class="card">
                     <img src="img/compressed/atomic_design.png" alt="atomic_design" />
@@ -356,7 +369,7 @@
                         <h4>Caracas, Venezuela</h4>
                     </div>
                     <div>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/gabmart1995/" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <h4>Linkedin</h4>
@@ -367,7 +380,7 @@
                         Si estas interesado en contratar mis servicios,
                         puedes contactar por las redes sociales o correo
                         electrónico, para solicitar un proyecto. <br /> <br />
-                        De acuerdo al tipo de proyecto y el alcance
+                        De acuerdo al tipo de proyecto y el alcance del mismo,
                         el precio puede variar dependiendo de la complejidad. <br /><br />
 
                         Y me pondré en contacto contigo lo más pronto posible.
@@ -376,20 +389,21 @@
             </div>
         </section>
    </main>
+   <main id="map"></main>
    <footer class="background">
         <div class="wrapper">
             <p>Gabriel Martínez &copy; <span id="year"></span></p>
             <div class="social-container">
-                <a href="#">
+                <a href="https://github.com/gabmart1995" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="#">
+                <a href="https://gitlab.com/gabmart1995" target="_blank">
                     <i class="fab fa-gitlab"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/gabmart1995/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://gabmart1995.blogspot.com/">
+                <a href="https://gabmart1995.blogspot.com/" target="_blank">
                     <i class="fab fa-blogger-b"></i>
                 </a>
             </div>

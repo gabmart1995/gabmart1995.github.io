@@ -620,6 +620,18 @@ main #port .grid-port .card p {
 	font-size: 1rem;
 }
 
+main #port .more-proyect {
+	margin-top: 40px; 
+	text-align: right;
+}
+
+@media screen and (max-width: 576px) {
+	main #port .more-proyect a:last-child {
+		margin-top: 10px;
+	}
+}
+
+/* section contact */
 main #contact .contact-grid {
 	display: grid;
 	grid-template-columns: 35% 65%;
@@ -725,4 +737,9 @@ footer .social-container a {
 #map {
 	height: 250px;
 	max-width: 100%;
+}
+
+#map a.leaflet-control-zoom-in span,
+#map a.leaflet-control-zoom-out span {
+	color: black;
 }

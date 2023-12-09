@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <base href="/" />
     <meta charset="UTF-8">
@@ -20,41 +20,40 @@
         <div class="wrapper">
             <div class="nav-item" id="menu">
                 <i class="fas fa-bars"></i>
-                <span>Menú</span>
+                <span>{{ MENU }}</span>
             </div>
-            <!-- <i class="fas fa-cog"></i> -->
+            <i class="fas fa-globe" id="translate-button"></i>
         </div>
         <aside class="sidenav" id="sidenav">
             <a class="closebtn" id="sidenav-close-button">&times;</a>
             <figure>
                 <img src="img/gabmart.jpeg" class="avatar" />
                 <figcaption>
-                    Gabriel Martínez <br />
-                    Programador
+                    {{ NAME }} <br />
+                    {{ JOB }}
                 </figcaption>
             </figure>
-            <a href="#acerca">Acerca</a>
-            <a href="#services">Servicios</a>
-            <a href="#proyects">Experiencia</a>
-            <a href="#port">Proyectos</a>
-            <a href="#contact">Contacto</a>
+            <a href="#acerca">{{ ABOUT }}</a>
+            <a href="#services">{{ SERVICES }}</a>
+            <a href="#proyects">{{ EXPERIENCE }}</a>
+            <a href="#port">{{ PROYECTS }}</a>
+            <a href="#contact">{{ CONTACT }}</a>
         </aside>
     </nav>
     <header>
         <div class="wrapper">
             <div>
                 <h1>
-                    Hola, soy Gabriel Martínez. <br/> 
-                    Desarrollador de aplicaciones
+                    {{ GREETING }}<br/> 
+                    {{ TITLE_JOB }}
                 </h1>
                 <p>
-                    Soy un joven apasionado por desarrollo de soluciones <br /> 
-                    para el ramo de comercio electrónico. <br /><br />
-                    He sido líder y colaborador en varios proyectos a nivel de desarrollo FrontEnd y apoyo en desarrollo FullStack.
+                    {{ HEADER_1 }}<br /><br />
+                    {{ HEADER_2 }}
                 </p>
                 <p>
-                    <a href="/#services" class="primary-button">Ver servicios</a>
-                    <a href="/#proyects" class="primary-button">Ver mi experiencia</a>
+                    <a href="/#services" class="primary-button">{{ SHOW_SERVICES }}</a>
+                    <a href="/#proyects" class="primary-button">{{ SHOW_EXPERIENCE }}</a>
                 </p>
                 <div class="social-container">
                     <a href="https://github.com/gabmart1995" target="_blank">
@@ -348,8 +347,9 @@
                     </p>
                 </div>
             </div>
-            <div style="margin-top: 40px; text-align: right;">
-                <a target="_blank" href="https://github.com/gabmart1995?tab=repositories" class="primary-button">Ver más proyectos</a>
+            <div class="more-proyect">
+                <a target="_blank" href="https://github.com/gabmart1995?tab=repositories" class="primary-button">Ver proyectos Github</a>
+                <a target="_blank" href="https://gitlab.com/users/gabmart1995/projects" class="primary-button">Ver proyectos Gitlab</a>
             </div>
         </section>
    </main>
@@ -365,7 +365,9 @@
                         <h4>Correo electrónico</h4>
                     </div>
                     <div>
-                        <i class="fas fa-location-arrow"></i>
+                        <a href="/#map">
+                            <i class="fas fa-location-arrow"></i>
+                        </a>
                         <h4>Caracas, Venezuela</h4>
                     </div>
                     <div>
@@ -409,6 +411,7 @@
             </div>
         </div>
    </footer>
+   <script src="js/translate.js"></script>
    <script src="js/index.js"></script>
 </body>
 </html>

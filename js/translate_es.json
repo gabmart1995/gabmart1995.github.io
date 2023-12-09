@@ -1,0 +1,16 @@
+{
+    "MENU": "Menú",
+    "ABOUT": "Acerca",
+    "SERVICES": "Servicios",
+    "EXPERIENCE": "Experiencia",
+    "PROYECTS": "Proyectos",
+    "CONTACT": "Contacto",
+    "NAME": "Gabriel Martínez",
+    "JOB": "Programador",
+    "TITLE_JOB": "Desarrollador de Software",
+    "GREETING": "Hola, soy Gabriel Martínez.",
+    "HEADER_1": "Soy un joven apasionado por desarrollo de soluciones <br /> para el ramo de comercio electrónico.",
+    "HEADER_2": "He sido líder y colaborador en varios proyectos a nivel de desarrollo FrontEnd y apoyo en desarrollo FullStack.",
+    "SHOW_SERVICES": "Ver servicios",
+    "SHOW_EXPERIENCE": "Ver experiencia"
+}

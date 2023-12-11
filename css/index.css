@@ -135,7 +135,7 @@ main.background {
 /* nav */
 nav .wrapper {
 	max-width: 80%;
-	margin: 0 auto;
+	margin: 0 auto !important;
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 0; 
@@ -743,3 +743,54 @@ footer .social-container a {
 #map a.leaflet-control-zoom-out span {
 	color: black;
 }
+
+/** image svg */
+main.p-relative {
+	position: relative;
+	max-width: initial;
+	display: flex;
+	justify-content: center;
+}
+
+
+/** ocultamos las figuras en mobile */
+@media screen and (max-width: 576px) {
+	main.p-relative img {
+		display: none;
+	}
+}
+
+main.p-relative #acerca,
+main.p-relative #proyects,
+main.p-relative #contact {
+	max-width: 80%;
+}
+
+.figure-bottom-right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 150px;
+}
+
+.figure-top-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 150px;
+}
+
+.figure-bottom-left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 150px;
+}
+
+.figure-top-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+}
+

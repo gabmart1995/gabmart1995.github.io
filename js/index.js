@@ -51,6 +51,8 @@
         // establece la camara
         map.setView(coords, zoom);
     };
+
+    AOS.init({ duration: 1200 });
     
     initSidebar();
     initYear();

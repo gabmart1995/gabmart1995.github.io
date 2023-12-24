@@ -51,6 +51,35 @@
                 "SERVICES": "Creación de Scripts",
                 "SERVICES_DESCRIPTION": "Creación de scripts para automatización de procesos en tus aplicaciones ya existentes. Como scripts de respaldos o de generacion de reportes."
             }
+        },
+        "EXPERIENCE": {
+            "NAME": "Experiencia profesional",
+            "STACK": "Stack utilizado:",
+            "TEAM": "Equipo de desarrollo:",
+            "SHOW_SITE": "Ver sitio",
+            "SEE_PROYECT": "Ver proyecto",
+            "SEE_DOCUMENTATION": "Ver documentación",
+            "POINT_1": {
+                "NAME": "Estudios Audiophone S.A",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong>Programador FrontEnd",
+                "DESCRIPTION": "Mi primer proyecto independiente a nivel profesional, aplicando tecnologías web, este proyecto es el sitio web de la organización. Con el objetivo de darse a conocer al público captando clientes y luego una aplicación administrativa en que los empleados puedan agendar y gestionar los días de servicios."
+            },
+            "POINT_2": {
+                "NAME": "Optimmanage - Polpoo",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong> Programador FrontEnd y Móvil Híbrido",
+                "DESCRIPTION": "Es conocido como el ecosistema completo de geolocalización, es una aplicación web que colabora de una forma excepcional con las actividades de logística y distribución de productos, centralizada en un solo sitio."               
+            },
+            "POINT_3": {
+                "NAME": "OneNote Software (Side Project)",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong> Programador FrontEnd y Asesor en Backend",
+                "DESCRIPTION": "Es una aplicación administrativa de escritorio para gestión y control de ordenes e inventario, generando reportes y estadisticas de ventas."               
+            },
+            "POINT_4": {
+                "TITLE": "2022 - Actualidad",
+                "NAME": "Freelancer & Indie Creator",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong> Programador FullStack",
+                "DESCRIPTION": "En esta etapa, me concentró en ofrecer mis servicios a organizaciones y clientes que necesiten un servicio de automatización de procesos en sus organizaciones. Creando y comercializando soluciones tecnológicas colaborando con otros desarrolladores y clientes."               
+            }
         }
     },
     "en": {
@@ -105,6 +134,35 @@
                 "SERVICES": "Script Creation",
                 "SERVICES_DESCRIPTION": "Creation of scripts to automate processes in your existing applications. Such as backup or report generation scripts."
             }
+        },
+        "EXPERIENCE": {
+            "NAME": "Professional experience",
+            "STACK": "Used stack:",
+            "TEAM": "Development team:",
+            "SHOW_SITE": "Show site",
+            "SEE_PROYECT": "See proyect",
+            "SEE_DOCUMENTATION": "See documentation",
+            "POINT_1": {
+                "NAME": "Estudios Audiophone S.A",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Role:</strong> FrontEnd Programmer",
+                "DESCRIPTION": "My first independent project at a professional level, applying web technologies, this project is the organization's website. With the objective of making itself known to the public by attracting clients and then an administrative application in which employees can schedule and manage service days."               
+            },
+            "POINT_2": {
+                "NAME": "Optimmanage - Polpoo",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Role:</strong> FrontEnd and Hybrid Mobile Programmer",
+                "DESCRIPTION": "It is known as the complete geolocation ecosystem, it is a web application that collaborates in an exceptional way with logistics and product distribution activities, centralized in a single site."               
+            },
+            "POINT_3": {
+                "NAME": "OneNote Software (Side Project)",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong> FrontEnd Programmer and Backend Advisor",
+                "DESCRIPTION": "It is a desktop administrative application for management and control of orders and inventory, generating reports and sales statistics."               
+            },
+            "POINT_4": {
+                "TITLE": "2022 - Present",
+                "NAME": "Freelancer & Indie Creator",
+                "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong> FullStack Programmer",
+                "DESCRIPTION": "At this stage, I focused on offering my services to organizations and clients that need a process automation service in their organizations. Creating and marketing technological solutions collaborating with other developers and clients."               
+            }    
         }
     }
 }

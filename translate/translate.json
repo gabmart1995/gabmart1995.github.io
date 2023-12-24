@@ -80,6 +80,13 @@
                 "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong> Programador FullStack",
                 "DESCRIPTION": "En esta etapa, me concentró en ofrecer mis servicios a organizaciones y clientes que necesiten un servicio de automatización de procesos en sus organizaciones. Creando y comercializando soluciones tecnológicas colaborando con otros desarrolladores y clientes."               
             }
+        },
+        "PROYECTS": {
+            "TITLE": "Algunos de mis proyectos personales",
+            "PROYECT_1": {
+                "NAME": "Atomic Design",
+                "DESCRIPTION": "Es un repositorio sobre los Componentes Web en Javascript, sin utilizar ningún framework <br /><br />Inspirado por el tema de los Sistemas de Diseños en las plataformas y aplicaciones web. <br /> <br />Con referencias en el articulo y blog de: <br /><br />"
+            }
         }
     },
     "en": {
@@ -163,6 +170,13 @@
                 "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong> FullStack Programmer",
                 "DESCRIPTION": "At this stage, I focused on offering my services to organizations and clients that need a process automation service in their organizations. Creating and marketing technological solutions collaborating with other developers and clients."               
             }    
+        },
+        "PROYECTS": {
+            "TITLE": "Some of my personal projects",
+            "PROYECT_1": {
+                "NAME": "Atomic Design",
+                "DESCRIPTION": "It is a repository of Web Components in Javascript, without using any framework. <br /><br />Inspired by the topic of Design Systems in web platforms and applications. <br /> <br />With references in the article and blog of: <br /><br />"
+            }
         }
     }
 }

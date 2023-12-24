@@ -153,6 +153,15 @@ nav .nav-item span {
 	font-weight: bold;
 }
 
+nav #translate-button {
+	cursor: pointer;
+}
+
+nav #translate-button span {
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
 @media screen and (max-width: 830px) {
 	nav .wrapper {
 		margin-left: 20px;
@@ -417,15 +426,18 @@ main #services .grid-services .card {
 
 main #services .grid-services .card i {
 	font-size: 2rem;
-	transition: all 0.3s;
 }
 
-main #services .grid-services .card h4 {
+
+main #services .grid-services .card:hover i,
+main #services .grid-services .card:hover h4,
+main #services .grid-services .card:hover h4 i18-translate {
 	transition: all 0.3s;
 }
 
 main #services .grid-services .card:hover i,
-main #services .grid-services .card:hover h4 {
+main #services .grid-services .card:hover h4,
+main #services .grid-services .card:hover h4 i18-translate {
 	color: var(--color-3);
 }
 
@@ -588,7 +600,7 @@ main #port .grid-port .card {
 	background: var(--color-2);
 	padding: 30px 25px;
 	overflow-y: auto;
-	height: 400px;
+	height: 500px;
 }
 
 main #port .grid-port .card img {

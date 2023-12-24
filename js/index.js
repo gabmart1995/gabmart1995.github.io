@@ -52,9 +52,45 @@
         map.setView(coords, zoom);
     };
 
+    const initTranslate = () => {
+        const translateContent = () => {
+            const translateElements = document.querySelectorAll('i18-translate');
+            if (translateElements.length === 0) return;
+
+            for (const translateElement of translateElements) {
+                translateElement._lang = translateElement._lang === 'es' ? 'en' : 'es';
+            }
+        };
+
+        fetch('translate/translate.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Error en la consulta');
+                return response.json();
+            })
+            .then(translates => {
+                window.translate = translates;
+
+                // ejecutamos la carga del componente si el translate esta
+                // cargado ...
+                return import('../translate/translate-component.js');
+            })
+            .then(() => {
+                const translateButton = document.querySelector('#translate-button');
+                if (!translateButton) return;
+
+                translateButton.addEventListener('click', () => {
+                    translateContent();
+                });
+
+                translateContent();
+            })
+            .catch(console.error);
+    };
+
     AOS.init({ duration: 1200 });
     
     initSidebar();
     initYear();
     initMap();
+    initTranslate();
 })();

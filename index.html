@@ -17,42 +17,50 @@
         <div class="wrapper">
             <div class="nav-item" id="menu">
                 <i class="fas fa-bars"></i>
-                <span>Menú</span>
+                <span><i18-translate>MENU.NAME</i18-translate></span>
             </div>
-            <!-- <i class="fas fa-globe" id="translate-button"></i> -->
+            <div id="translate-button">
+                <span style="margin-right: 15px;">
+                    <i18-translate>LANG</i18-translate>
+                </span>
+                <i class="fas fa-globe"></i>
+            </div>
         </div>
         <aside class="sidenav" id="sidenav">
             <a class="closebtn" id="sidenav-close-button">&times;</a>
             <figure>
                 <img src="img/gabmart.jpeg" class="avatar" />
                 <figcaption>
-                    Gabriel Martínez <br />
-                    Programador
+                    <i18-translate>NAME</i18-translate> <br />
+                    <i18-translate>JOB</i18-translate>
                 </figcaption>
             </figure>
-            <a href="#">Inicio</a>
-            <a href="#acerca">Acerca</a>
-            <a href="#services">Servicios</a>
-            <a href="#proyects">Experiencia</a>
-            <a href="#port">Proyectos</a>
-            <a href="#contact">Contacto</a>
+            <a href="#"><i18-translate>MENU.INIT</i18-translate></a>
+            <a href="#acerca"><i18-translate>MENU.ABOUT</i18-translate></a>
+            <a href="#services"><i18-translate>MENU.SERVICES</i18-translate></a>
+            <a href="#proyects"><i18-translate>MENU.EXPERIENCE</i18-translate></a>
+            <a href="#port"><i18-translate>MENU.PROYECTS</i18-translate></a>
+            <a href="#contact"><i18-translate>MENU.CONTACT</i18-translate></a>
         </aside>
     </nav>
     <header>
         <div class="wrapper">
             <div>
                 <h1>
-                    Hola, soy Gabriel Martínez.<br/> 
-                    Desarrollador de Software.
+                    <i18-translate>HEADER.GREETING</i18-translate><br/> 
+                    <i18-translate>HEADER.TITLE_JOB</i18-translate>
                 </h1>
                 <p>
-                    Soy un joven apasionado por desarrollo de soluciones<br />
-                    para el ramo de comercio electrónico e Internet de las cosas.<br /><br />
-                    He sido líder y colaborador en varios proyectos a nivel de desarrollo FrontEnd y apoyo en desarrollo FullStack.
+                    <i18-translate>HEADER.HEADER_1</i18-translate><br /><br />
+                    <i18-translate>HEADER.HEADER_2</i18-translate>
                 </p>
                 <p>
-                    <a href="/#services" class="primary-button">Ver servicios</a>
-                    <a href="/#proyects" class="primary-button">Ver experiencias</a>
+                    <a href="/#services" class="primary-button">
+                        <i18-translate>HEADER.SHOW_SERVICES</i18-translate>
+                    </a>
+                    <a href="/#proyects" class="primary-button">
+                        <i18-translate>HEADER.SHOW_EXPERIENCE</i18-translate> 
+                    </a>
                 </p>
                 <div class="social-container">
                     <a href="https://github.com/gabmart1995" target="_blank">
@@ -76,37 +84,31 @@
    </header>
    <main class="p-relative">
         <section id="acerca">
-            <h2>Acerca</h2>
+            <h2><i18-translate>MENU.ABOUT</i18-translate></h2>
             <div class="grid-about">
                 <div>
                     <div>
                         <i class="fas fa-suitcase"></i>
                         <h4 class="title-about">
                             <span>3</span><br />
-                            Proyectos <br /> Exitosos
+                            <i18-translate>ABOUT.SUCCESSFUL_PROYECTS</i18-translate>
                         </h4>
                     </div>
                     <div>
                         <i class="fas fa-project-diagram space"></i>
                         <h4 class="title-about">
                             <span>2</span><br />
-                            Side <br /> Proyects
+                            <i18-translate>ABOUT.SIDE_PROYECTS</i18-translate>
                         </h4>
                     </div>
                 </div>
                 <div>
                     <article>
                         <p>
-                            Mi nombre es Gabriel Martínez soy un desarrollador en sede 
-                            Caracas Venezuela.  En mi trayectoría profesional con más 5 años de experiencia, 
-                            he sido líder y colaborador en varios proyectos a nivel de desarrollo Frontend
-                            y colaborador en proyectos FullStack.
+                            <i18-translate>ABOUT.ABOUT_1</i18-translate>
                         </p>
                         <p>
-                            He orientado mi trabajo hacia el mundo online: mi pasión es 
-                            diseñar aplicaciones de negocios para empresas, organizaciones y 
-                            clientes. Me gusta colaborar en el diseño de software trabajando 
-                            en diversos equipos de desarrollo y seguridad de la información.
+                            <i18-translate>ABOUT.ABOUT_2</i18-translate>
                         </p>
                         <p style="margin-top: 40px;">
                             <span class="signature">Gabriel Martinez</span>
@@ -121,63 +123,44 @@
    <main class="background">
         <!--servicios -->
         <section id="services">
-            <h2>Servicios</h2>
+            <h2><i18-translate>MENU.SERVICES</i18-translate></h2>
             <div class="grid-services">
                 <div class="card">
                     <i class="fas fa-globe"></i>
-                    <h4>Desarrollo de sitios Web</h4>
-                    <p> 
-                        Me especializo y ofrezco servicios en el diseño de páginas exitosas 
-                        dentro de la Internet.
-                    </p>
+                    <h4><i18-translate>SERVICES.CARD_1.SERVICES</i18-translate></h4>
+                    <p><i18-translate>SERVICES.CARD_1.SERVICES_DESCRIPTION</i18-translate></p>
                 </div>
                 <div class="card">
                     <i class="fas fa-laptop-code"></i>
-                    <h4>Desarrollo de Aplicaciones</h4>
-                    <p> 
-                        Incluyo dentro de mis servicios la oportunidad de desarrollar soluciones tecnológicas 
-                        para diferentes dispositivos.
-                    </p>
+                    <h4><i18-translate>SERVICES.CARD_2.SERVICES</i18-translate></h4>
+                    <p><i18-translate>SERVICES.CARD_2.SERVICES_DESCRIPTION</i18-translate></p>
                 </div>
                 <div class="card">
                     <i class="fab fa-wordpress"></i>
-                    <h4>WordPress. Temas y plugins</h4>
-                    <p> 
-                        Desarrollo de Temas y Plugins Personalizados en Wordpress para tu blog o tienda virtual
-                        en WooCommerce.
-                    </p>
+                    <h4><i18-translate>SERVICES.CARD_3.SERVICES</i18-translate></h4>
+                    <p><i18-translate>SERVICES.CARD_3.SERVICES_DESCRIPTION</i18-translate></p>
                 </div>
                 <div class="card">
                     <i class="fas fa-mobile-alt"></i>
-                    <h4>Integración PWA</h4>
-                    <p> 
-                        La Integración PWA incluye la mejora de un sitio web ya
-                        existente añadiendo funcionalidades nativas e 
-                        instalándose en tu dispositivo. 
-                    </p>
+                    <h4><i18-translate>SERVICES.CARD_4.SERVICES</i18-translate></h4>
+                    <p><i18-translate>SERVICES.CARD_4.SERVICES_DESCRIPTION</i18-translate></p>
                 </div>
                 <div class="card">
                     <i class="fas fa-rocket"></i>
-                    <h4>Integración de servicios externos (API)</h4>
-                    <p> 
-                        La integración de servicios incluye que tu sitio o aplicación se conecte a
-                        un servicio en la nube en particular.
-                    </p>
+                    <h4><i18-translate>SERVICES.CARD_5.SERVICES</i18-translate></h4>
+                    <p><i18-translate>SERVICES.CARD_5.SERVICES_DESCRIPTION</i18-translate></p>
                 </div>
                 <div class="card">
                     <i class="fas fa-code"></i>
-                    <h4>Creación de Scripts</h4>
-                    <p> 
-                        Creación de scripts para automatización de procesos en tus aplicaciones
-                        ya existentes. Como scripts de respaldos o de generacion de reportes. 
-                    </p>
+                    <h4><i18-translate>SERVICES.CARD_6.SERVICES</i18-translate></h4>
+                    <p><i18-translate>SERVICES.CARD_6.SERVICES_DESCRIPTION</i18-translate></p>
                 </div>
             </div>
         </section>
    </main>
    <main class="p-relative">
         <section id="proyects">
-            <h2>Portafolio y Experiencias</h2> 
+            <h2>Experiencia profesional</h2> 
             <!-- creacion de linea de tiempo -->
             <div class="timeline">
                 <div class="container left">
@@ -285,7 +268,7 @@
                                 En esta etapa, me concentró en ofrecer mis servicios a organizaciones y
                                 clientes que necesiten un servicio de automatización de procesos en 
                                 sus organizaciones. Creando y comercializando
-                                soluciones tecnológicas colaborando a la comunidad de desarrolladores y clientes. 
+                                soluciones tecnológicas colaborando con otros desarrolladores y clientes. 
                             </p>
                         </article>
                     </div>
@@ -299,7 +282,7 @@
         <section id="port">
             <h2>Algunos de mis proyectos personales</h2>
             <div class="grid-port">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="img/compressed/atomic_design.png" alt="atomic_design" />
                     <h4>Atomic Design</h4>
                     <p> 
@@ -314,7 +297,7 @@
                         <a class="primary-button" href="https://gabmart1995.github.io/atomic-design/" target="_blank">Ver sitio</a>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="img/compressed/snippet_code_1.png" alt="snippet_code_app" />
                     <img src="img/compressed/snippet_code_2.png" alt="snippet_code_app_2" />
                     <h4>Snippet Code App</h4>
@@ -330,7 +313,7 @@
                         <a class="primary-button" href="https://github.com/gabmart1995/snippet-electron-app/releases/tag/v1.1" target="_blank">Ver releases</a>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <img src="img/compressed/create-app-cli_1.png" alt="create-app-cli" />
                     <img src="img/compressed/create-app-cli_2.png" alt="create-app-cli-2" />
                     <h4>Create App Cli</h4>

@@ -1,6 +1,8 @@
 {
     "es": {
         "LANG": "Español",
+        "NAME": "Gabriel Martínez",
+        "JOB": "Programador",
         "MENU": {
             "NAME": "Menú",
             "INIT": "Inicio",
@@ -10,8 +12,6 @@
             "PROYECTS": "Proyectos",
             "CONTACT": "Contacto"
         },
-        "NAME": "Gabriel Martínez",
-        "JOB": "Programador",
         "HEADER": {
             "TITLE_JOB": "Desarrollador de Software",
             "GREETING": "Hola, soy Gabriel Martínez.",
@@ -59,6 +59,7 @@
             "SHOW_SITE": "Ver sitio",
             "SEE_PROYECT": "Ver proyecto",
             "SEE_DOCUMENTATION": "Ver documentación",
+            "SHOW_RELEASES": "Ver releases",
             "POINT_1": {
                 "NAME": "Estudios Audiophone S.A",
                 "ROLE": "<strong style=\"margin-right: 5px;\">Rol:</strong>Programador FrontEnd",
@@ -82,15 +83,33 @@
             }
         },
         "PROYECTS": {
+            "SEE_GITLAB_PROYECTS": "Ver proyectos GitLab",
+            "SEE_GITHUB_PROYECTS": "Ver proyectos GitHub",
             "TITLE": "Algunos de mis proyectos personales",
             "PROYECT_1": {
                 "NAME": "Atomic Design",
                 "DESCRIPTION": "Es un repositorio sobre los Componentes Web en Javascript, sin utilizar ningún framework <br /><br />Inspirado por el tema de los Sistemas de Diseños en las plataformas y aplicaciones web. <br /> <br />Con referencias en el articulo y blog de: <br /><br />"
+            },
+            "PROYECT_2": {
+                "NAME": "Snippet Code App",
+                "DESCRIPTION": "Es un editor de código, construido sobre ElectronJS, Vanilla JS y Web Components<br /><br />Puedes descargar un instalador desde el sitio de releases. <br/ > <br />Los sistemas operativos soportados son: Windows y Linux de 32 y 64 bits<br /> <br />Posee sintaxis para Python y lenguajes de la Web. (HTML, CSS, JavaScript)<br /> <br />"
+            },
+            "PROYECT_3": {
+                "NAME": "Create App Cli",
+                "DESCRIPTION": "Es una linea de comandos que permite generar archivos estaticos para la Web, te premite crear estructura de trabajo para páginas, temas, plugins de WordPress o generar la estructura de un proyecto de Electron o React JS.<br/><br/>Incluye un servidor estático para desarrollar sitios web.<br/><br/>El objetivo de este proyecto es dar una herramienta para los programadores iniciantes para que inicien con su aprendizaje de manera rapida y efectiva.<br /> <br />"
             }
+        },
+        "CONTACT": {
+            "EMAIL": "Correo electrónico",
+            "LOCATION": "Caracas, Venezuela",
+            "LINKEDIN": "Linkedin",
+            "DESCRIPTION": "Si estas interesado en contratar mis servicios, puedes contactar por las redes sociales o correo electrónico, para solicitar un proyecto. <br /> <br /> De acuerdo al tipo de proyecto y el alcance del mismo, el precio puede variar dependiendo de la complejidad. <br /><br />Y me pondré en contacto contigo lo más pronto posible."
         }
     },
     "en": {
         "LANG": "English",
+        "NAME": "Gabriel Martínez",
+        "JOB": "Programmer",
         "MENU": {
             "NAME": "Menu",
             "INIT": "Inicio",
@@ -100,8 +119,6 @@
             "PROYECTS": "Proyects",
             "CONTACT": "Contact"
         },
-        "NAME": "Gabriel Martínez",
-        "JOB": "Programmer",
         "HEADER": {
             "TITLE_JOB": "Software Developer",
             "GREETING": "Hello, i'm Gabriel Martínez.",
@@ -149,6 +166,7 @@
             "SHOW_SITE": "Show site",
             "SEE_PROYECT": "See proyect",
             "SEE_DOCUMENTATION": "See documentation",
+            "SHOW_RELEASES": "Show releases",
             "POINT_1": {
                 "NAME": "Estudios Audiophone S.A",
                 "ROLE": "<strong style=\"margin-right: 5px;\">Role:</strong> FrontEnd Programmer",
@@ -173,10 +191,26 @@
         },
         "PROYECTS": {
             "TITLE": "Some of my personal projects",
+            "SEE_GITLAB_PROYECTS": "See GitLab Proyects",
+            "SEE_GITHUB_PROYECTS": "See GitHub Proyects",
             "PROYECT_1": {
                 "NAME": "Atomic Design",
                 "DESCRIPTION": "It is a repository of Web Components in Javascript, without using any framework. <br /><br />Inspired by the topic of Design Systems in web platforms and applications. <br /> <br />With references in the article and blog of: <br /><br />"
+            },
+            "PROYECT_2": {
+                "NAME": "Snippet Code App",
+                "DESCRIPTION": "It is a code editor, built on ElectronJS, Vanilla JS and Web Components<br /><br />You can download an installer from the releases site. <br/ > <br />The supported operating systems are: Windows and Linux 32 and 64 bits<br /> <br />It has syntax for Python and Web languages. (HTML, CSS, JavaScript)<br /> <br />"
+            },
+            "PROYECT_3": {
+                "NAME": "Create App Cli",
+                "DESCRIPTION": "It is a command line that allows you to generate static files for the Web, it allows you to create a work structure for WordPress pages, themes, plugins or generate the structure of an Electron or React JS project. <br /><br />Includes a static server to develop websites.<br /> <br />The goal of this project is to provide a tool for novice programmers. so that they can start their learning quickly and effectively.<br /> <br />"
             }
+        },
+        "CONTACT": {
+            "EMAIL": "Email",
+            "LOCATION": "Caracas, Venezuela",
+            "LINKEDIN": "Linkedin",
+            "DESCRIPTION": "If you are interested in hiring my services, You can contact us through social networks or email email, to request a project. <br /> <br />Depending on the type of project and its scope, Price may vary depending on complexity. <br /><br />And I will contact you as soon as possible."
         }
     }
 }

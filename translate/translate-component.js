@@ -15,7 +15,7 @@ class TranslateComponent extends HTMLElement {
 	set _lang(value) {
 		this.lang = value;
 		this.translates = window.translate[value];
-		this.setTranslateValue();
+		this.translateSite();
 	}
 
     get _lang() {
@@ -26,7 +26,7 @@ class TranslateComponent extends HTMLElement {
 		return [];
 	}
 
-	setTranslateValue() {
+	translateSite() {
 		if (this.key.length === 0) return;
 
 		let translateValue = '';

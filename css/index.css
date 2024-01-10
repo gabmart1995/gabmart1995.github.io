@@ -253,6 +253,19 @@ header .wrapper {
 header .wrapper > div:last-child {
 	display: flex;
 	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+
+@media screen and (max-width: 576px) {
+	header .profile {
+		height: 200px; 
+	}
+	
+	header .wrapper > div:last-child {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (min-width: 577px) and (max-width: 830px) {

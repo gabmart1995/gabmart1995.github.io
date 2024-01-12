@@ -52,9 +52,24 @@
         map.setView(coords, zoom);
     };
 
-    AOS.init({ duration: 1200 });
-    
+    /** cambia la direccion de la animacion en mobile */
+    const changeDirectionAnimate = () => {
+        if (window.matchMedia('(max-width: 576px)').matches) {
+            const timeLineContainers = document.querySelectorAll('.timeline > .container');
+            
+            if (timeLineContainers.length === 0) return;
+            
+            for (const timeLineContainer of timeLineContainers) {
+                const [children] = timeLineContainer.children;
+                children.setAttribute('data-aos', 'fade');
+            }
+        }
+    };
+
     initSidebar();
     initYear();
     initMap();
+    changeDirectionAnimate();
+    
+    AOS.init({ duration: 1200 });
 })();

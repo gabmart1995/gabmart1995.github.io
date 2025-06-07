@@ -807,3 +807,16 @@ main.p-relative #contact {
 	width: 150px;
 }
 
+.go-logo {
+	position: absolute;
+	top: -24px;
+	width: 60px;
+}
+
+/** ocultamos las figuras en mobile */
+@media screen and (max-width: 576px) {
+	.go-logo {
+		display: block !important;
+		left: 0;
+	}
+}

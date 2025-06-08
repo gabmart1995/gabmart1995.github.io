@@ -105,7 +105,7 @@ main.background {
 .primary-button {
 	border: none;
 	outline: none;
-	background-color: var(--color-3);
+	background-color: var(--color-7);
 	color: var(--title-color);
 	font-size: 1rem;
 	padding: 10px 20px;
@@ -115,7 +115,8 @@ main.background {
 }
 
 .primary-button:hover {
-	background-color: var(--color-5);
+	background-color: var(--color-3);
+	color: var(--title-color);
 }
 
 .avatar {

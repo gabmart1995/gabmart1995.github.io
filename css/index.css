@@ -821,3 +821,9 @@ main.p-relative #contact {
 		left: 0;
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.d-inline {
+		display: inline !important;
+	}
+}

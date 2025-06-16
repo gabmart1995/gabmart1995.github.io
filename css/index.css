@@ -120,9 +120,9 @@ main.background {
 }
 
 .avatar {
-	height: 134px;
-	width: 108px;
-	border-radius: 30%;
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
 }
 
 .signature {

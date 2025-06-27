@@ -105,7 +105,7 @@ main.background {
 .primary-button {
 	border: none;
 	outline: none;
-	background-color: var(--color-3);
+	background-color: var(--color-7);
 	color: var(--title-color);
 	font-size: 1rem;
 	padding: 10px 20px;
@@ -115,12 +115,13 @@ main.background {
 }
 
 .primary-button:hover {
-	background-color: var(--color-5);
+	background-color: var(--color-3);
+	color: var(--title-color);
 }
 
 .avatar {
-	height: 100px;
-	width: 100px;
+	height: 120px;
+	width: 120px;
 	border-radius: 50%;
 }
 
@@ -818,5 +819,11 @@ main.p-relative #contact {
 	.go-logo {
 		display: block !important;
 		left: 0;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.d-inline {
+		display: inline !important;
 	}
 }

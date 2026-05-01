@@ -102,6 +102,18 @@ main.background {
 	max-width: 100% !important;
 }
 
+.card-buttons {
+	display: grid; 
+	gap: 5px; 
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.card-buttons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /** clases globales */
 .primary-button {
 	border: none;
@@ -622,7 +634,6 @@ main #port .grid-port .card h4 {
 
 main #port .grid-port .card a:not(.primary-button) {
 	text-decoration: none;
-	font-family: 'Lora';
 	color: var(--color-3);
 }
 

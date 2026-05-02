@@ -9,9 +9,17 @@
         
         const closeButtonSidenav = sidenav.querySelector('.closebtn');
         if (!closeButtonSidenav) return;
+
+        const favMenu = document.querySelector('#fav-menu');
+        if (!favMenu) return;
         
         // boton de apertura sidenav
         menu.addEventListener('click', () => {
+            sidenav.style.width = '250px';
+        });
+
+        favMenu.addEventListener('click', event => {
+            event.preventDefault();
             sidenav.style.width = '250px';
         });
 
@@ -24,10 +32,7 @@
     /** inicializa el footer */
     const initYear = () => {
         const year = document.querySelector('#year');
-        
-        if (year) {
-        year.innerText = (new Date()).getFullYear(); 
-        }
+        if (year) year.innerText = (new Date()).getFullYear(); 
     };
 
     /** inicializa el mapa */

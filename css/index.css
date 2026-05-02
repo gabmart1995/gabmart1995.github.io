@@ -827,7 +827,7 @@ main.p-relative #contact {
 	width: 60px;
 }
 
-.fav-buttons {
+.fav-icons {
 	position: fixed;
 	right: 30px;
 	bottom: 30px;
@@ -838,20 +838,20 @@ main.p-relative #contact {
 	align-items: center;
 }
 
-.fav-buttons i {
-	padding: 18px;
+.fav-icons i {
+	padding: 12px;
 	background: var(--color-3);
 	border-radius: 50%;
-	font-size: 28px;
+	font-size: 22px;
 	transition: all 0.3s ease;
 }
 
-.fav-buttons i:hover {
+.fav-icons i:hover {
 	background: var(--color-5);
 }
 
 @media screen and (max-width: 576px) {
-	.fav-buttons {
+	.fav-icons {
 		right: 10px;
 		bottom: 10px;
 	}
